@@ -21,54 +21,62 @@ char *read_input(void)
 /**
 * execute_command - executes commands provided
 * @input: pointer to list of commands
-* @argv: array vector of commands
 * Return: void
 */
-void execute_command(char *input, char *argv[])
+void execute_command(char *input)
 {
-pid_t pid = fork();
-int status;
-char *args[4];
+	pid_t pid;
+	int status, i = 0;
+	char *token, *args[MAX_ARGS];
 
-if (pid == 0)
-{
-args[0] = "/bin/sh";
-args[1] = "-c";
-args[2] = input;
-args[3] = NULL;
-execv(args[0], args);
-fprintf(stderr, "%s: %d: %s: not found\n", argv[0], __LINE__, input);
-exit(EXIT_FAILURE);
-}
-else
-{
-waitpid(pid, &status, 0);
-if (WIFEXITED(status) && WEXITSTATUS(status) != 0)
-{
-fprintf(stderr, "%s:%d:%s:%d", argv[0], __LINE__, input, WEXITSTATUS(status));
-}
-else if (WIFSIGNALED(status))
-{
-fprintf(stderr, "%s: %d: %s: %d", argv[0], __LINE__, input, WTERMSIG(status));
-}
-}
+	token = strtok(input, " ");
+
+	while (token != NULL && i < MAX_ARGS - 1)
+	{
+		args[i] = token;
+		token = strtok(NULL, " ");
+		i++;
+	}
+
+	args[i] = NULL;
+
+	pid = fork();
+	if (pid == 0)
+	{
+		execvp(args[0], args);
+		fprintf(stderr, "Error: Failed to execute command.\n");
+		exit(EXIT_FAILURE);
+	}
+	else if (pid < 0)
+	{
+		fprintf(stderr, "Error: Failed to create child process.\n");
+		exit(EXIT_FAILURE);
+	}
+	else
+	{
+		waitpid(pid, &status, 0);
+		if (WIFEXITED(status) && WEXITSTATUS(status) != 0)
+		{
+			fprintf(stderr, "Error:'%s'status %d.\n", args[0], WEXITSTATUS(status));
+		}
+		else if (WIFSIGNALED(status))
+		{
+			fprintf(stderr, "Error:'%s' signal %d.\n", args[0], WTERMSIG(status));
+		}
+	}
 }
 
 /**
-* main - entry point
-* @argc: arg count
-* @argv: arg list
-* Return: 0
-*/
-int main(int argc, char *argv[])
+ * main - entry point
+ * Return: 0
+ */
+int main(void)
 {
 	char *input;
 	int isatty_mode = isatty(STDIN_FILENO);
 
 	if (isatty_mode)
 		printf("($) ");
-	if (argc > 1)
-		printf("You have listed %d commands.", argc - 1);
 	while (1)
 	{
 		if (isatty_mode)
@@ -77,7 +85,7 @@ int main(int argc, char *argv[])
 		{
 			input = malloc(sizeof(char) * MAX_LENGTH);
 			if (fgets(input, MAX_LENGTH, stdin) == NULL)
-			break;
+				break;
 		}
 		input[mystrcspn(input, "\n")] = '\0';
 
@@ -87,7 +95,8 @@ int main(int argc, char *argv[])
 			break;
 		}
 
-		execute_command(input, argv);
+		execute_command(input);
+
 		if (isatty_mode)
 			printf("($) ");
 

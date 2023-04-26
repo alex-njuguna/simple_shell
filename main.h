@@ -10,6 +10,7 @@
 #include <stdarg.h>
 
 #define MAX_LENGTH 1024
+#define MAX_ARGS 100
 
 /* prototypes */
 
@@ -18,6 +19,6 @@ size_t mystrcspn(const char *str1, const char *str2);
 void myprintf(const char *format, ...);
 int myputchar(char c);
 char *read_input(void);
-void execute_command(char *input, char *argv[]);
+void execute_command(char *input);
 
 #endif
