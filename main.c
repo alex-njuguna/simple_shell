@@ -66,9 +66,9 @@ int main(int argc, char *argv[])
 	int isatty_mode = isatty(STDIN_FILENO);
 
 	if (isatty_mode)
-		myprintf("($) ");
+		printf("($) ");
 	if (argc > 1)
-		myprintf("You have listed %d commands.", argc - 1);
+		printf("You have listed %d commands.", argc - 1);
 	while (1)
 	{
 		if (isatty_mode)
@@ -89,13 +89,13 @@ int main(int argc, char *argv[])
 
 		execute_command(input, argv);
 		if (isatty_mode)
-			myprintf("($) ");
+			printf("($) ");
 
 		free(input);
 	}
 
 	if (!isatty_mode)
-		myputchar('\n');
+		putchar('\n');
 
 	return (EXIT_SUCCESS);
 }
