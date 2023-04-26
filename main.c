@@ -1,101 +1,76 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <sys/wait.h>
+
 #include "main.h"
 
-/**
-* read_input - read input from user
-* Return: input or null
-*/
-char *read_input(void)
-{
-	char *input = malloc(sizeof(char) * MAX_LENGTH);
-	size_t input_size = 0;
-
-	if (getline(&input, (size_t *) &input_size, stdin) == -1)
-	{
-		free(input);
-		return (NULL);
-	}
-
-	return (input);
-}
+#define MAX_COMMAND_LENGTH 100
 
 /**
-* execute_command - executes commands provided
-* @input: pointer to list of commands
-* @argv: array vector of commands
-* Return: void
-*/
-void execute_command(char *input, char *argv[])
+ * main - entry point
+ * Return: 0
+ */
+int main(void)
 {
-pid_t pid = fork();
-int status;
-char *args[4];
+	char command[MAX_COMMAND_LENGTH];
+	size_t length;
+	int status;
 
-if (pid == 0)
-{
-args[0] = "/bin/sh";
-args[1] = "-c";
-args[2] = input;
-args[3] = NULL;
-execv(args[0], args);
-fprintf(stderr, "%s: %d: %s: not found\n", argv[0], __LINE__, input);
-exit(EXIT_FAILURE);
-}
-else
-{
-waitpid(pid, &status, 0);
-if (WIFEXITED(status) && WEXITSTATUS(status) != 0)
-{
-fprintf(stderr, "%s:%d:%s:%d", argv[0], __LINE__, input, WEXITSTATUS(status));
-}
-else if (WIFSIGNALED(status))
-{
-fprintf(stderr, "%s: %d: %s: %d", argv[0], __LINE__, input, WTERMSIG(status));
-}
-}
-}
-
-/**
-* main - entry point
-* @argc: arg count
-* @argv: arg list
-* Return: 0
-*/
-int main(int argc, char *argv[])
-{
-	char *input;
-	int isatty_mode = isatty(STDIN_FILENO);
-
-	if (isatty_mode)
-		printf("($) ");
-	if (argc > 1)
-		printf("You have listed %d commands.", argc - 1);
 	while (1)
 	{
-		if (isatty_mode)
-			input = read_input();
-		else
+		printf("$ ");
+		if (fgets(command, MAX_COMMAND_LENGTH, stdin) == NULL)
 		{
-			input = malloc(sizeof(char) * MAX_LENGTH);
-			if (fgets(input, MAX_LENGTH, stdin) == NULL)
 			break;
 		}
-		input[mystrcspn(input, "\n")] = '\0';
-
-		if (mystrcmp(input, "exit") == 0)
+		length = strcspn(command, "\n");
+		if (length == 0)
 		{
-			free(input);
-			break;
+			continue;
 		}
-
-		execute_command(input, argv);
-		if (isatty_mode)
-			printf("($) ");
-
-		free(input);
+		command[length] = '\0';
+		status = execute_command(command);
+		if (status == -1)
+		{
+		printf("Error: command '%s' not found\n", command);
+		}
 	}
+	return (0);
+}
 
-	if (!isatty_mode)
-		putchar('\n');
+/**
+ * execute_command - execute commands collected
+ * @command: test par
+ * Return: int
+ */
+int execute_command(char *command)
+{
+	pid_t pid = fork();
+	char *args[10];
 
-	return (EXIT_SUCCESS);
+	if (pid == -1)
+	{
+		perror("fork");
+		exit(EXIT_FAILURE);
+	}
+	else if (pid == 0)
+	{
+		args[0] = command;
+		args[1] = NULL;
+		if (execvp(args[0], args) == -1)
+		{
+			return (-1);
+		}
+	}
+	else
+	{
+	if (wait(NULL) == -1)
+	{
+		perror("wait");
+		exit(EXIT_FAILURE);
+	}
+	}
+	return (0);
 }
