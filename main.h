@@ -3,14 +3,21 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include <unistd.h>
+#include <string.h>
 #include <sys/wait.h>
+#include <errno.h>
+#include <stdarg.h>
 
-#define MAX_CMD_LENGTH 300
+#define MAX_LENGTH 1024
 
-char *get_input();
-char **parse_input(char *input);
-void execute(char **args);
+/* prototypes */
+
+int mystrcmp(const char *str1, const char *str2);
+size_t mystrcspn(const char *str1, const char *str2);
+void myprintf(const char *format, ...);
+int myputchar(char c);
+char *read_input(void);
+void execute_command(char *input, char *argv[]);
 
 #endif
