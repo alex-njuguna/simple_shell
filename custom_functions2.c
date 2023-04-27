@@ -2,7 +2,7 @@
 
 
 /**
-* execute_program - run a program
+* execute_program - runs program
 * @buffer: pointer to string buffer
 * @argv: pointer to split commands
 * @length: pointer to buffer length
