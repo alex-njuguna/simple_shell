@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "main.h"
 
 /**
  * exitt - function that exits the shell with or without a return of status n
