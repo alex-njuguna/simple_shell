@@ -1,75 +1,100 @@
 #include "main.h"
 
 /**
-* mystrcmp - compare two strings
-* @str1: first argument
-* @str2: second arg
-* Return: difference between the two strings
-*/
+  * myprintf - outputs a string
+  * @fd: file decripto
+  * @str: test par
+  */
+void myprintf(int fd, char *str)
+{
+	write(fd, str, (string_length(str) * sizeof(char)));
+}
 
-int mystrcmp(const char *str1, const char *str2)
+/**
+  * string_length - check no of characters
+  * @str: test par
+  * Return: no of chars
+  */
+int string_length(char *str)
 {
 	int i = 0;
 
-	while (str1[i] == str2[i])
+	while (str[i] != '\0')
 	{
-		if (str1[i] == '\0')
-		return (0);
 		i++;
 	}
-	return (str1[i] - str2[i]);
+	return (i);
 }
 
 /**
-* mystrcspn - check str in another str
-* @str1: arg 1
-* @str2: arg 2
-* Return: count
-*/
-
-size_t mystrcspn(const char *str1, const char *str2)
+  * mystrcmp - compares two strings
+  * @str1: test par 1
+  * @str2: test par 2
+  * Return: 0
+  */
+int mystrcmp(char *str1, char *str2)
 {
-	const char *p;
-	const char *q;
-size_t count = 0;
+	int i = 0;
 
-	for (p = str1; *p != '\0'; p++)
+	while (str1[i] != '\0')
 	{
-		for (q = str2; *q != '\0'; q++)
-		{
-			if (*p == *q)
-			{
-			return (count);
-			}
-		}
-		count++;
+		if (str2[i] == '\0')
+			break;
+		if (str1[i] != str2[i])
+			return (str1[i] - str2[i]);
+		i++;
+	}
+	return (0);
+}
+
+/**
+  * combine_strings - combines strings with a given symbol
+  * @st1: test par1
+  * @st2: test par2
+  * @c: symbol
+  * Return: pointe to combined string
+  */
+char *combine_strings(char *st1, char *st2, char c)
+{
+	char *newStr;
+	int i = 0;
+
+	newStr = malloc((string_length(st1) + string_length(st2) + 2) * sizeof(char));
+
+	while (*st1 != '\0')
+	{
+		newStr[i] = *st1;
+		st1 += 1;
+		i++;
 	}
 
-	return (count);
+	newStr[i] = c;
+	i++;
+
+	while (*st2 != '\0')
+	{
+		newStr[i] = *st2;
+		st2 += 1;
+		i++;
+	}
+
+	newStr[i] = '\0';
+	return (newStr);
 }
-
 /**
-* myprintf - print output
-* @format: input format
-* @...: other par
-*/
-
-void myprintf(const char *format, ...)
+  * show_error - show error
+  * @msg: message to show
+  * @buffer: pointer to buffer pointer
+  * @length: pointer to size of chars
+  * @argv: pointer to commands
+  */
+void show_error(char *msg, char **buffer, size_t *length, char **argv)
 {
-	va_list args;
+	int fderr = 2;
+	char *err;
 
-	va_start(args, format);
-	vprintf(format, args);
-	va_end(args);
-}
-
-/**
-* myputchar - prints a character
-* @c: test par
-* Return: a integer
-*/
-
-int myputchar(char c)
-{
-	return (write(1, &c, 1));
+	err = combine_strings(argv[0], msg, ':');
+	write(fderr, err, string_length(err) * sizeof(char));
+	*buffer = NULL;
+	*length = 0;
 }

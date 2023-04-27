@@ -2,23 +2,24 @@
 #define MAIN_H
 
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <string.h>
 #include <sys/wait.h>
-#include <errno.h>
-#include <stdarg.h>
-
-#define MAX_LENGTH 1024
-#define MAX_ARGS 100
 
 /* prototypes */
 
-int mystrcmp(const char *str1, const char *str2);
-size_t mystrcspn(const char *str1, const char *str2);
-void myprintf(const char *format, ...);
-int myputchar(char c);
-char *read_input(void);
-void execute_command(char *input);
+void pipe_in(void);
+void delete_commands(char **argv);
+void myprintf(int fd, char *str);
+int string_length(char *str);
+int mystrcmp(char *str1, char *str2);
+char *combine_strings(char *st1, char *st2, char c);
+void show_error(char *msg, char **buffer, size_t *length, char **argv);
+int execute_program(char *buffer, char **argv, size_t *length, char **envp);
+int newproc(char *buffer, char **argv, size_t *len, char **envp, char *path);
+int mysetenv(char **argv);
+int strarr_count(char **argv);
+char *findpath(char *cmd);
 
 #endif
