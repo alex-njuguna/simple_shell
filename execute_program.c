@@ -1,41 +1,41 @@
-#include "shell.h"
+#include "main.h"
 /**
- * execute - executes a command with its entire path variables.
- * @data: a pointer to the program's data
- * Return: If sucess returns zero, otherwise, return -1.
+ * execute_prog - function that executes a command
+ * @prog_data: the program's data structure
+ * Return: o if sucess, otherwise, -1.
  */
-int execute(data_of_program *data)
+int execute_prog(data_of_program *prog_data)
 {
-	int retval = 0, status;
+	int ret_val = 0, status;
 	pid_t pidd;
 
-	/* check for program in built ins */
-	retval = builtins_list(data);
-	if (retval != -1)/* if program was found in built ins */
-		return (retval);
+	
+	ret_val = builtins_list(prog_data);
+	if (ret_val != -1)
+		return (ret_val);
 
-	/* check for program file system */
-	retval = find_program(data);
-	if (retval)
-	{/* if program not found */
-		return (retval);
+	
+	ret_val = find_program(prog_data);
+	if (ret_val)
+	{
+		return (ret_val);
 	}
 	else
-	{/* if program was found */
-		pidd = fork(); /* create a child process */
+	{
+		pidd = fork();
 		if (pidd == -1)
-		{ /* if the fork call failed */
-			perror(data->command_name);
+		{
+			perror(prog_data->command_name);
 			exit(EXIT_FAILURE);
 		}
 		if (pidd == 0)
-		{/* I am the child process, I execute the program*/
-			retval = execve(data->tokens[0], data->tokens, data->env);
-			if (retval == -1) /* if error when execve*/
-				perror(data->command_name), exit(EXIT_FAILURE);
+		{
+			ret_val = execve(prog_data->tokens[0], prog_data->tokens, prog_data->env);
+			if (ret_val == -1)
+				perror(prog_data->command_name), exit(EXIT_FAILURE);
 		}
 		else
-		{/* I am the father, I wait and check the exit status of the child */
+		{
 			wait(&status);
 			if (WIFEXITED(status))
 				errno = WEXITSTATUS(status);

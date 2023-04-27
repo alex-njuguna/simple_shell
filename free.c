@@ -1,57 +1,60 @@
-#include "shell.h"
+#include "main.h"
 
 /**
- * free_recurrent_data - free the fields needed each loop
- * @data: struct of the program's data
+ * free_data - function to free recurrent data
+ * @prog_data: the program's data structure
  * Return: Nothing
  */
-void free_recurrent_data(data_of_program *data)
-{
-	if (data->tokens)
-		free_array_of_pointers(data->tokens);
-	if (data->input_line)
-		free(data->input_line);
-	if (data->command_name)
-		free(data->command_name);
 
-	data->input_line = NULL;
-	data->command_name = NULL;
-	data->tokens = NULL;
+void free_data(data_of_program *prog_data)
+{
+	if (prog_data->tokens)
+		free_pointers_array(prog_data->tokens);
+	if (prog_data->input_line)
+		free(prog_data->input_line);
+	if (prog_data->command_name)
+		free(prog_data->command_name);
+
+	prog_data->input_line = NULL;
+	prog_data->command_name = NULL;
+	prog_data->tokens = NULL;
 }
 
 /**
- * free_all_data - free all field of the data
- * @data: struct of the program's data
+ * free_data_all - function to free all data
+ * @prog_data: the program's data structure
  * Return: Nothing
  */
-void free_all_data(data_of_program *data)
+
+void free_data_all(data_of_program *prog_data)
 {
-	if (data->file_descriptor != 0)
+	if (prog_data->file_descriptor != 0)
 	{
-		if (close(data->file_descriptor))
-			perror(data->program_name);
+		if (close(prog_data->file_descriptor))
+			perror(prog_data->program_name);
 	}
-	free_recurrent_data(data);
-	free_array_of_pointers(data->env);
-	free_array_of_pointers(data->alias_list);
+	free_data(prog_data);
+	free_pointers_array(prog_data->env);
+	free_pointers_array(prog_data->alias_list);
 }
 
 /**
- * free_array_of_pointers - frees each pointer of an array of pointers and the
- * array too
- * @array: array of pointers
+ * free_pointers_array - funtion to free pointers of an array of pointers and the
+ * array also
+ * @pointers_array: the array of pointers
  * Return: nothing
  */
-void free_array_of_pointers(char **array)
+
+void free_pointers_array(char **pointers_array)
 {
 	int i;
 
-	if (array != NULL)
+	if (pointers_array != NULL)
 	{
-		for (i = 0; array[i]; i++)
-			free(array[i]);
+		for (i = 0; pointers_array[i]; i++)
+			free(pointers_array[i]);
 
-		free(array);
-		array = NULL;
+		free(pointers_array);
+		pointers_array = NULL;
 	}
 }
