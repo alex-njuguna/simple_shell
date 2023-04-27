@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * execute - execute a command with its entire path variables.
+ * execute - executes a command with its entire path variables.
  * @data: a pointer to the program's data
  * Return: If sucess returns zero, otherwise, return -1.
  */
