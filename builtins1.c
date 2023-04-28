@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * builtins1 - find matches and run
+ * builtins1 - functions to find matches and run
  * @data: struct for the program's data
  * Return: func exceecuted or -1
  */
