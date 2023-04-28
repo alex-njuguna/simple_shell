@@ -2,7 +2,7 @@
 
 /**
  * expand_variables - ..
- * @data: program's data
+ * @data: pointer to the program's data
  */
 void expand_variables(data_of_program *data)
 {
