@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * display_alias - handle aliases
+ * display_alias - function to handle aliases
  * @data: program's data
  * @alias: name of the alias to be printed
  * Return: 0
