@@ -13,67 +13,18 @@
 #include <signal.h>
 #include <fcntl.h>
 
-#define PROMPT_MSG "dali<3 "
-
-#define UNUSED attribute((unused))
-
-#define BUFFER_SIZE 1024
-
-#define HELP_CD_MSG "cd=\n"
-"cd:\tcd [dir]\n\n"
-" Change the shell working directory.\n\n"
-" If no argument is given to cd the command will be interpreted\n"
-" as cd $HOME.\n"
-" if the argumenthelp is - (cd -), the command will be interpreted\n"
-" as cd $OLDPWD.\n\n"
-
-#define HELP_EXIT_MSG "exit=\n"
-"exit:\texit [STATUS]\n\n"
-" Exit of the simple-shell.\n\n"
-" Exits the shell with a status of N. If N is omitted, the exit status\n"
-" is that of the last command executed.\n\n"
-
-#define HELP_ENV_MSG "env=\n"
-"env:\tenv \n\n"
-" Print environment.\n\n"
-" The env command will be print a complete list of enviroment variables.\n\n"
-
-#define HELP_SETENV_MSG "setenv=\n"
-"setenv:\tsetenv VARIABLE VALUE\n\n"
-" Change or add an environment variable.\n\n"
-" initialize a new environment variable, or modify an existing one\n"
-" When there are not correct numbers of arguments print error message.\n\n"
-
-#define HELP_UNSETENV_MSG "unsetenv=\n"
-"unsetenv:\tunsetenv VARIABLE\n\n"
-" The unsetenv function deletes one variable from the environment.\n\n"
-" Wen there are not correct numbers of arguments print error message.\n\n"
-
-#define HELP_MSG "help=\n"
-"help:\thelp [BUILTIN_NAME]\n\n"
-" Display information about builtin commands.\n\n"
-" Displays brief summaries of builtin commands. If BUILTIN_NAME is\n"
-" specified, gives detailed help on all commands matching BUILTIN_NAME,\n"
-" otherwise the list of help topics is printed BUILTIN_NAME list.\n"
-" Arguments:\n\n"
-" BUILTIN_NAME specifiying a help topic.\n\n"
-" cd\t[dir]\n"
-" exit\t[status]\n"
-" env\n"
-" setenv\t[variable value]\n"
-" unset\t[variable]\n"
-" help\t[built_name]\n\n"
+#include "helpers.h"
 
 /**
- * struct info- info batch
- * @program_name: name
- * @input_line: input read
- * @command_name: first commad
- * @exec_counter: number of excecuted comands
- * @file_descriptor: file descriptor to the commands
- * @tokens: commands
- * @env: environment
- * @alias_list: aliases
+ * struct info - structure
+ * @program_name: par 1
+ * @input_line: par 2
+ * @command_name: par 3
+ * @exec_counter: par 4
+ * @file_descriptor: par 5
+ * @tokens: par 6
+ * @env: par 7
+ * @alias_list: par 8
  */
 typedef struct info
 {
@@ -88,9 +39,9 @@ char **alias_list;
 } data_of_program;
 
 /**
- * struct builtins - builtins
- * @builtin: builtin
- * @function: function to be called
+ * struct builtins - structure
+ * @builtin: par 1
+ * @function: par 2
  */
 typedef struct builtins
 {
@@ -98,59 +49,65 @@ char *builtin;
 int (*function)(data_of_program *data);
 } builtins;
 
-void inicialize_data(data_of_program *inp, int arc, char *argv[], char **env);
-void sisifo(char *prompt, data_of_program *data);
-void handle_ctrl_c(int opr UNUSED);
+/* prototypes */
+int display_alias(data_of_program *data, char *alias);
+char *retrieve_alias(data_of_program *data, char *name);
+int put_alias(char *alias_string, data_of_program *data);
+
+int builtins1(data_of_program *data);
+
+int myexit(data_of_program *data);
+int mycd(data_of_program *data);
+int mymkdir(data_of_program *data, char *new_dir);
+int myhelp(data_of_program *data);
+int another_alias(data_of_program *data);
+
+int show_env(data_of_program *data);
+int create_env(data_of_program *data);
+int destroy_env(data_of_program *data);
+
+char *get_env_var(char *env_var, data_of_program *data);
+int env_set_key(char *key, char *value, data_of_program *data);
+int env_delete_key(char *key, data_of_program *data);
+void show_environ(data_of_program *data);
+
+int run_prog(data_of_program *data);
 
 void expand_variables(data_of_program *data);
-void expand_alias(data_of_program *data);
-int buffer_add(char *buffer, char *str_to_add);
+void more_alias(data_of_program *data);
+int append_str(char *buffer, char *str);
 
-void tokenize(data_of_program *data);
-char *_strtok(char *input, char *delimator);
+int locate_program(data_of_program *data);
+char **split_path(data_of_program *data);
+int ascertain_file(char *file_path);
 
-int execute(data_of_program *data);
-
-int builtins_list(data_of_program *data);
-
-void free_array_of_pointers(char **directories);
 void free_recurrent_data(data_of_program *data);
-void free_all_data(data_of_program *data);
+void free_data(data_of_program *data);
+void free_pointers_array(char **myarray);
 
-int builtin_env(data_of_program *data);
-int builtin_set_env(data_of_program *data);
-int builtin_unset_env(data_of_program *data);
-
-char *env_get_key(char *name, data_of_program *data);
-int env_set_key(char *key, char *value, data_of_program *data);
-int env_remove_key(char *key, data_of_program *data);
-void print_environ(data_of_program *data);
-
-int builtin_exit(data_of_program *input);
-int builtin_cd(data_of_program *input);
-int set_work_directory(data_of_program *input, char *new_dir);
-int builtin_help(data_of_program *input);
-int builtin_alias(data_of_program *input);
-
-int _getline(data_of_program *input);
-int check_logic_ops(char *commands[], int i, char command_operators[]);
-
-void long_to_string(long num, char *str, int base);
+void num_to_str(long num, char *str, int base);
 int _atoi(char *str);
-int count_characters(char *str, char *ch);
-
-int check_file(char *file_path);
-int find_program(data_of_program *input);
-char **tokenize_path(data_of_program *input);
+int count_char(char *str, char *chars);
 
 int _print(char *str);
 int _printe(char *str);
-int _print_error(int errorcode, data_of_program *input);
+int _print_error(int errorcode, data_of_program *data);
 
-int str_length(char *str);
-char *str_duplicate(char *str);
-int str_compare(char *str1, char *str2, int num);
-char *str_concat(char *str1, char *str2);
-void str_reverse(char *str);
+int str_len(char *str);
+char *str_dup(char *str);
+int str_compare(char *str1, char *str2, int number);
+char *str_join(char *str1, char *str2);
+void str_rev(char *str);
+
+int mygetline(data_of_program *data);
+int check_logic_ops(char *array_commands[], int i, char array_operators[]);
+
+char *_strtok(char *line, char *delimator);
+
+void split_str(data_of_program *data);
+
+void prompter(char *prompt, data_of_program *data);
+void process_data(data_of_program *data, int argc, char *argv[], char **env);
+void handle_ctrl_c(int opr UNUSED);
 
 #endif
