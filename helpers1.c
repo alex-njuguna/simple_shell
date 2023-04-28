@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * free_recurrent_data - keep the buffers clean
+ * free_recurrent_data - function to keep the buffers clean
  * @data: ..
  */
 void free_recurrent_data(data_of_program *data)

@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * run_prog - run prog
+ * run_prog - function run prog
  * @data: program's data
  * Return: 0 or -1
  */

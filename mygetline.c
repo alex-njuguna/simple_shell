@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* mygetline - read input
+* mygetline - function to read input
 * @data: program's data
 * Return: count output
 */
