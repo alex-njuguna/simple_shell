@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _print - output chars
+ * _print - function to output chars
  * @str: test par
  * Return: count int
  */
