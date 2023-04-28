@@ -2,7 +2,7 @@
 
 /**
  * split_str - ..
- * @data: program's data
+ * @data: the program's data
  * Return: different commands
  */
 void split_str(data_of_program *data)

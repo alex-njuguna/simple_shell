@@ -2,7 +2,7 @@
 
 /**
  * locate_program - ..
- * @data: program's data
+ * @data: the program's data
  * Return: 0
  */
 int locate_program(data_of_program *data)
