@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * myexit - close prog
+ * myexit - function to close prog
  * @data: struct for the program's data
  * Return: 0 or error
  */
