@@ -1,0 +1,2906 @@
+In file included from aliases.c:1:
+main.h:23:1: error: expected identifier or ‘(’ before string constant
+   23 | "cd:\tcd [dir]\n\n"
+      | ^~~~~~~~~~~~~~~~~~~
+main.h:88:3: warning: data definition has no type or storage class
+   88 | } data_of_program;
+      |   ^~~~~~~~~~~~~~~
+main.h:88:3: warning: type defaults to ‘int’ in declaration of ‘data_of_program’ [-Wimplicit-int]
+main.h:98:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   98 | int (*function)(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:99:1: warning: no semicolon at end of struct or union
+   99 | } builtins;
+      | ^
+main.h:101:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  101 | void inicialize_data(data_of_program *inp, int arc, char *argv[], char **env);
+      |                      ^~~~~~~~~~~~~~~
+main.h:102:27: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  102 | void sisifo(char *prompt, data_of_program *data);
+      |                           ^~~~~~~~~~~~~~~
+main.h:18:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘attribute’
+   18 | #define UNUSED attribute((unused))
+      |                ^~~~~~~~~
+main.h:103:28: note: in expansion of macro ‘UNUSED’
+  103 | void handle_ctrl_c(int opr UNUSED);
+      |                            ^~~~~~
+main.h:105:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  105 | void expand_variables(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:106:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  106 | void expand_alias(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:109:15: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  109 | void tokenize(data_of_program *data);
+      |               ^~~~~~~~~~~~~~~
+main.h:112:13: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  112 | int execute(data_of_program *data);
+      |             ^~~~~~~~~~~~~~~
+main.h:114:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  114 | int builtins_list(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:117:26: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  117 | void free_recurrent_data(data_of_program *data);
+      |                          ^~~~~~~~~~~~~~~
+main.h:118:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  118 | void free_all_data(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:120:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  120 | int builtin_env(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:121:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  121 | int builtin_set_env(data_of_program *data);
+      |                     ^~~~~~~~~~~~~~~
+main.h:122:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  122 | int builtin_unset_env(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:124:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  124 | char *env_get_key(char *name, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:125:41: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  125 | int env_set_key(char *key, char *value, data_of_program *data);
+      |                                         ^~~~~~~~~~~~~~~
+main.h:126:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  126 | int env_remove_key(char *key, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:127:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  127 | void print_environ(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:129:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  129 | int builtin_exit(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:130:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  130 | int builtin_cd(data_of_program *input);
+      |                ^~~~~~~~~~~~~~~
+main.h:131:24: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  131 | int set_work_directory(data_of_program *input, char *new_dir);
+      |                        ^~~~~~~~~~~~~~~
+main.h:132:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  132 | int builtin_help(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:133:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  133 | int builtin_alias(data_of_program *input);
+      |                   ^~~~~~~~~~~~~~~
+main.h:135:14: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  135 | int _getline(data_of_program *input);
+      |              ^~~~~~~~~~~~~~~
+main.h:143:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  143 | int find_program(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:144:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  144 | char **tokenize_path(data_of_program *input);
+      |                      ^~~~~~~~~~~~~~~
+main.h:148:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  148 | int _print_error(int errorcode, data_of_program *input);
+      |                                 ^~~~~~~~~~~~~~~
+aliases.c:9:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+    9 | int display_alias(data_of_program *input, char *alias)
+      |                   ^~~~~~~~~~~~~~~
+aliases.c:46:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   46 | char *get_alias(data_of_program *input, char *name)
+      |                 ^~~~~~~~~~~~~~~
+aliases.c:73:28: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   73 | int set_alias(char *alias, data_of_program *input)
+      |                            ^~~~~~~~~~~~~~~
+In file included from env_b.c:1:
+main.h:23:1: error: expected identifier or ‘(’ before string constant
+   23 | "cd:\tcd [dir]\n\n"
+      | ^~~~~~~~~~~~~~~~~~~
+main.h:88:3: warning: data definition has no type or storage class
+   88 | } data_of_program;
+      |   ^~~~~~~~~~~~~~~
+main.h:88:3: warning: type defaults to ‘int’ in declaration of ‘data_of_program’ [-Wimplicit-int]
+main.h:98:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   98 | int (*function)(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:99:1: warning: no semicolon at end of struct or union
+   99 | } builtins;
+      | ^
+main.h:101:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  101 | void inicialize_data(data_of_program *inp, int arc, char *argv[], char **env);
+      |                      ^~~~~~~~~~~~~~~
+main.h:102:27: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  102 | void sisifo(char *prompt, data_of_program *data);
+      |                           ^~~~~~~~~~~~~~~
+main.h:18:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘attribute’
+   18 | #define UNUSED attribute((unused))
+      |                ^~~~~~~~~
+main.h:103:28: note: in expansion of macro ‘UNUSED’
+  103 | void handle_ctrl_c(int opr UNUSED);
+      |                            ^~~~~~
+main.h:105:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  105 | void expand_variables(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:106:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  106 | void expand_alias(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:109:15: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  109 | void tokenize(data_of_program *data);
+      |               ^~~~~~~~~~~~~~~
+main.h:112:13: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  112 | int execute(data_of_program *data);
+      |             ^~~~~~~~~~~~~~~
+main.h:114:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  114 | int builtins_list(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:117:26: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  117 | void free_recurrent_data(data_of_program *data);
+      |                          ^~~~~~~~~~~~~~~
+main.h:118:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  118 | void free_all_data(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:120:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  120 | int builtin_env(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:121:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  121 | int builtin_set_env(data_of_program *data);
+      |                     ^~~~~~~~~~~~~~~
+main.h:122:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  122 | int builtin_unset_env(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:124:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  124 | char *env_get_key(char *name, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:125:41: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  125 | int env_set_key(char *key, char *value, data_of_program *data);
+      |                                         ^~~~~~~~~~~~~~~
+main.h:126:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  126 | int env_remove_key(char *key, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:127:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  127 | void print_environ(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:129:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  129 | int builtin_exit(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:130:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  130 | int builtin_cd(data_of_program *input);
+      |                ^~~~~~~~~~~~~~~
+main.h:131:24: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  131 | int set_work_directory(data_of_program *input, char *new_dir);
+      |                        ^~~~~~~~~~~~~~~
+main.h:132:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  132 | int builtin_help(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:133:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  133 | int builtin_alias(data_of_program *input);
+      |                   ^~~~~~~~~~~~~~~
+main.h:135:14: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  135 | int _getline(data_of_program *input);
+      |              ^~~~~~~~~~~~~~~
+main.h:143:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  143 | int find_program(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:144:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  144 | char **tokenize_path(data_of_program *input);
+      |                      ^~~~~~~~~~~~~~~
+main.h:148:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  148 | int _print_error(int errorcode, data_of_program *input);
+      |                                 ^~~~~~~~~~~~~~~
+env_b.c:8:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+    8 | int builtin_environ(data_of_program *prog_data)
+      |                     ^~~~~~~~~~~~~~~
+env_b.c:55:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   55 | int builtin_add_env(data_of_program *prog_data)
+      |                     ^~~~~~~~~~~~~~~
+env_b.c:77:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   77 | int builtin_unadd_env(data_of_program *prog_data)
+      |                       ^~~~~~~~~~~~~~~
+In file included from env_m.c:1:
+main.h:23:1: error: expected identifier or ‘(’ before string constant
+   23 | "cd:\tcd [dir]\n\n"
+      | ^~~~~~~~~~~~~~~~~~~
+main.h:88:3: warning: data definition has no type or storage class
+   88 | } data_of_program;
+      |   ^~~~~~~~~~~~~~~
+main.h:88:3: warning: type defaults to ‘int’ in declaration of ‘data_of_program’ [-Wimplicit-int]
+main.h:98:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   98 | int (*function)(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:99:1: warning: no semicolon at end of struct or union
+   99 | } builtins;
+      | ^
+main.h:101:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  101 | void inicialize_data(data_of_program *inp, int arc, char *argv[], char **env);
+      |                      ^~~~~~~~~~~~~~~
+main.h:102:27: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  102 | void sisifo(char *prompt, data_of_program *data);
+      |                           ^~~~~~~~~~~~~~~
+main.h:18:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘attribute’
+   18 | #define UNUSED attribute((unused))
+      |                ^~~~~~~~~
+main.h:103:28: note: in expansion of macro ‘UNUSED’
+  103 | void handle_ctrl_c(int opr UNUSED);
+      |                            ^~~~~~
+main.h:105:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  105 | void expand_variables(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:106:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  106 | void expand_alias(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:109:15: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  109 | void tokenize(data_of_program *data);
+      |               ^~~~~~~~~~~~~~~
+main.h:112:13: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  112 | int execute(data_of_program *data);
+      |             ^~~~~~~~~~~~~~~
+main.h:114:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  114 | int builtins_list(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:117:26: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  117 | void free_recurrent_data(data_of_program *data);
+      |                          ^~~~~~~~~~~~~~~
+main.h:118:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  118 | void free_all_data(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:120:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  120 | int builtin_env(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:121:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  121 | int builtin_set_env(data_of_program *data);
+      |                     ^~~~~~~~~~~~~~~
+main.h:122:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  122 | int builtin_unset_env(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:124:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  124 | char *env_get_key(char *name, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:125:41: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  125 | int env_set_key(char *key, char *value, data_of_program *data);
+      |                                         ^~~~~~~~~~~~~~~
+main.h:126:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  126 | int env_remove_key(char *key, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:127:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  127 | void print_environ(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:129:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  129 | int builtin_exit(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:130:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  130 | int builtin_cd(data_of_program *input);
+      |                ^~~~~~~~~~~~~~~
+main.h:131:24: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  131 | int set_work_directory(data_of_program *input, char *new_dir);
+      |                        ^~~~~~~~~~~~~~~
+main.h:132:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  132 | int builtin_help(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:133:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  133 | int builtin_alias(data_of_program *input);
+      |                   ^~~~~~~~~~~~~~~
+main.h:135:14: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  135 | int _getline(data_of_program *input);
+      |              ^~~~~~~~~~~~~~~
+main.h:143:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  143 | int find_program(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:144:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  144 | char **tokenize_path(data_of_program *input);
+      |                      ^~~~~~~~~~~~~~~
+main.h:148:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  148 | int _print_error(int errorcode, data_of_program *input);
+      |                                 ^~~~~~~~~~~~~~~
+env_m.c:9:34: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+    9 | char *get_env_val(char *key_var, data_of_program *prog_data)
+      |                                  ^~~~~~~~~~~~~~~
+env_m.c:41:50: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   41 | int add_env_key(char *key_name, char *new_value, data_of_program *prog_data)
+      |                                                  ^~~~~~~~~~~~~~~
+env_m.c:80:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   80 | int rmv_env_key(char *key_name, data_of_program *prog_data)
+      |                                 ^~~~~~~~~~~~~~~
+env_m.c:118:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  118 | void display_environ(data_of_program *prog_data)
+      |                      ^~~~~~~~~~~~~~~
+In file included from execute_program.c:1:
+main.h:23:1: error: expected identifier or ‘(’ before string constant
+   23 | "cd:\tcd [dir]\n\n"
+      | ^~~~~~~~~~~~~~~~~~~
+main.h:88:3: warning: data definition has no type or storage class
+   88 | } data_of_program;
+      |   ^~~~~~~~~~~~~~~
+main.h:88:3: warning: type defaults to ‘int’ in declaration of ‘data_of_program’ [-Wimplicit-int]
+main.h:98:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   98 | int (*function)(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:99:1: warning: no semicolon at end of struct or union
+   99 | } builtins;
+      | ^
+main.h:101:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  101 | void inicialize_data(data_of_program *inp, int arc, char *argv[], char **env);
+      |                      ^~~~~~~~~~~~~~~
+main.h:102:27: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  102 | void sisifo(char *prompt, data_of_program *data);
+      |                           ^~~~~~~~~~~~~~~
+main.h:18:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘attribute’
+   18 | #define UNUSED attribute((unused))
+      |                ^~~~~~~~~
+main.h:103:28: note: in expansion of macro ‘UNUSED’
+  103 | void handle_ctrl_c(int opr UNUSED);
+      |                            ^~~~~~
+main.h:105:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  105 | void expand_variables(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:106:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  106 | void expand_alias(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:109:15: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  109 | void tokenize(data_of_program *data);
+      |               ^~~~~~~~~~~~~~~
+main.h:112:13: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  112 | int execute(data_of_program *data);
+      |             ^~~~~~~~~~~~~~~
+main.h:114:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  114 | int builtins_list(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:117:26: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  117 | void free_recurrent_data(data_of_program *data);
+      |                          ^~~~~~~~~~~~~~~
+main.h:118:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  118 | void free_all_data(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:120:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  120 | int builtin_env(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:121:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  121 | int builtin_set_env(data_of_program *data);
+      |                     ^~~~~~~~~~~~~~~
+main.h:122:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  122 | int builtin_unset_env(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:124:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  124 | char *env_get_key(char *name, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:125:41: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  125 | int env_set_key(char *key, char *value, data_of_program *data);
+      |                                         ^~~~~~~~~~~~~~~
+main.h:126:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  126 | int env_remove_key(char *key, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:127:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  127 | void print_environ(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:129:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  129 | int builtin_exit(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:130:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  130 | int builtin_cd(data_of_program *input);
+      |                ^~~~~~~~~~~~~~~
+main.h:131:24: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  131 | int set_work_directory(data_of_program *input, char *new_dir);
+      |                        ^~~~~~~~~~~~~~~
+main.h:132:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  132 | int builtin_help(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:133:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  133 | int builtin_alias(data_of_program *input);
+      |                   ^~~~~~~~~~~~~~~
+main.h:135:14: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  135 | int _getline(data_of_program *input);
+      |              ^~~~~~~~~~~~~~~
+main.h:143:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  143 | int find_program(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:144:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  144 | char **tokenize_path(data_of_program *input);
+      |                      ^~~~~~~~~~~~~~~
+main.h:148:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  148 | int _print_error(int errorcode, data_of_program *input);
+      |                                 ^~~~~~~~~~~~~~~
+execute_program.c:7:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+    7 | int execute_prog(data_of_program *prog_data)
+      |                  ^~~~~~~~~~~~~~~
+In file included from expand_function.c:1:
+main.h:23:1: error: expected identifier or ‘(’ before string constant
+   23 | "cd:\tcd [dir]\n\n"
+      | ^~~~~~~~~~~~~~~~~~~
+main.h:88:3: warning: data definition has no type or storage class
+   88 | } data_of_program;
+      |   ^~~~~~~~~~~~~~~
+main.h:88:3: warning: type defaults to ‘int’ in declaration of ‘data_of_program’ [-Wimplicit-int]
+main.h:98:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   98 | int (*function)(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:99:1: warning: no semicolon at end of struct or union
+   99 | } builtins;
+      | ^
+main.h:101:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  101 | void inicialize_data(data_of_program *inp, int arc, char *argv[], char **env);
+      |                      ^~~~~~~~~~~~~~~
+main.h:102:27: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  102 | void sisifo(char *prompt, data_of_program *data);
+      |                           ^~~~~~~~~~~~~~~
+main.h:18:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘attribute’
+   18 | #define UNUSED attribute((unused))
+      |                ^~~~~~~~~
+main.h:103:28: note: in expansion of macro ‘UNUSED’
+  103 | void handle_ctrl_c(int opr UNUSED);
+      |                            ^~~~~~
+main.h:105:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  105 | void expand_variables(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:106:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  106 | void expand_alias(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:109:15: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  109 | void tokenize(data_of_program *data);
+      |               ^~~~~~~~~~~~~~~
+main.h:112:13: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  112 | int execute(data_of_program *data);
+      |             ^~~~~~~~~~~~~~~
+main.h:114:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  114 | int builtins_list(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:117:26: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  117 | void free_recurrent_data(data_of_program *data);
+      |                          ^~~~~~~~~~~~~~~
+main.h:118:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  118 | void free_all_data(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:120:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  120 | int builtin_env(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:121:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  121 | int builtin_set_env(data_of_program *data);
+      |                     ^~~~~~~~~~~~~~~
+main.h:122:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  122 | int builtin_unset_env(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:124:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  124 | char *env_get_key(char *name, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:125:41: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  125 | int env_set_key(char *key, char *value, data_of_program *data);
+      |                                         ^~~~~~~~~~~~~~~
+main.h:126:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  126 | int env_remove_key(char *key, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:127:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  127 | void print_environ(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:129:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  129 | int builtin_exit(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:130:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  130 | int builtin_cd(data_of_program *input);
+      |                ^~~~~~~~~~~~~~~
+main.h:131:24: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  131 | int set_work_directory(data_of_program *input, char *new_dir);
+      |                        ^~~~~~~~~~~~~~~
+main.h:132:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  132 | int builtin_help(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:133:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  133 | int builtin_alias(data_of_program *input);
+      |                   ^~~~~~~~~~~~~~~
+main.h:135:14: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  135 | int _getline(data_of_program *input);
+      |              ^~~~~~~~~~~~~~~
+main.h:143:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  143 | int find_program(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:144:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  144 | char **tokenize_path(data_of_program *input);
+      |                      ^~~~~~~~~~~~~~~
+main.h:148:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  148 | int _print_error(int errorcode, data_of_program *input);
+      |                                 ^~~~~~~~~~~~~~~
+expand_function.c:10:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   10 | void expand_vars(data_of_program *prog_data)
+      |                  ^~~~~~~~~~~~~~~
+expand_function.c:61:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   61 | void alias_expand(data_of_program *prog_data)
+      |                   ^~~~~~~~~~~~~~~
+expand_function.c: In function ‘add_buffer’:
+expand_function.c:107:15: warning: implicit declaration of function ‘str_len’; did you mean ‘strnlen’? [-Wimplicit-function-declaration]
+  107 |         len = str_len(buffer);
+      |               ^~~~~~~
+      |               strnlen
+In file included from free.c:1:
+main.h:23:1: error: expected identifier or ‘(’ before string constant
+   23 | "cd:\tcd [dir]\n\n"
+      | ^~~~~~~~~~~~~~~~~~~
+main.h:88:3: warning: data definition has no type or storage class
+   88 | } data_of_program;
+      |   ^~~~~~~~~~~~~~~
+main.h:88:3: warning: type defaults to ‘int’ in declaration of ‘data_of_program’ [-Wimplicit-int]
+main.h:98:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   98 | int (*function)(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:99:1: warning: no semicolon at end of struct or union
+   99 | } builtins;
+      | ^
+main.h:101:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  101 | void inicialize_data(data_of_program *inp, int arc, char *argv[], char **env);
+      |                      ^~~~~~~~~~~~~~~
+main.h:102:27: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  102 | void sisifo(char *prompt, data_of_program *data);
+      |                           ^~~~~~~~~~~~~~~
+main.h:18:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘attribute’
+   18 | #define UNUSED attribute((unused))
+      |                ^~~~~~~~~
+main.h:103:28: note: in expansion of macro ‘UNUSED’
+  103 | void handle_ctrl_c(int opr UNUSED);
+      |                            ^~~~~~
+main.h:105:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  105 | void expand_variables(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:106:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  106 | void expand_alias(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:109:15: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  109 | void tokenize(data_of_program *data);
+      |               ^~~~~~~~~~~~~~~
+main.h:112:13: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  112 | int execute(data_of_program *data);
+      |             ^~~~~~~~~~~~~~~
+main.h:114:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  114 | int builtins_list(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:117:26: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  117 | void free_recurrent_data(data_of_program *data);
+      |                          ^~~~~~~~~~~~~~~
+main.h:118:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  118 | void free_all_data(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:120:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  120 | int builtin_env(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:121:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  121 | int builtin_set_env(data_of_program *data);
+      |                     ^~~~~~~~~~~~~~~
+main.h:122:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  122 | int builtin_unset_env(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:124:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  124 | char *env_get_key(char *name, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:125:41: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  125 | int env_set_key(char *key, char *value, data_of_program *data);
+      |                                         ^~~~~~~~~~~~~~~
+main.h:126:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  126 | int env_remove_key(char *key, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:127:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  127 | void print_environ(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:129:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  129 | int builtin_exit(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:130:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  130 | int builtin_cd(data_of_program *input);
+      |                ^~~~~~~~~~~~~~~
+main.h:131:24: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  131 | int set_work_directory(data_of_program *input, char *new_dir);
+      |                        ^~~~~~~~~~~~~~~
+main.h:132:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  132 | int builtin_help(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:133:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  133 | int builtin_alias(data_of_program *input);
+      |                   ^~~~~~~~~~~~~~~
+main.h:135:14: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  135 | int _getline(data_of_program *input);
+      |              ^~~~~~~~~~~~~~~
+main.h:143:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  143 | int find_program(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:144:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  144 | char **tokenize_path(data_of_program *input);
+      |                      ^~~~~~~~~~~~~~~
+main.h:148:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  148 | int _print_error(int errorcode, data_of_program *input);
+      |                                 ^~~~~~~~~~~~~~~
+free.c:9:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+    9 | void free_data(data_of_program *prog_data)
+      |                ^~~~~~~~~~~~~~~
+free.c:29:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   29 | void free_data_all(data_of_program *prog_data)
+      |                    ^~~~~~~~~~~~~~~
+In file included from list_b.c:1:
+main.h:23:1: error: expected identifier or ‘(’ before string constant
+   23 | "cd:\tcd [dir]\n\n"
+      | ^~~~~~~~~~~~~~~~~~~
+main.h:88:3: warning: data definition has no type or storage class
+   88 | } data_of_program;
+      |   ^~~~~~~~~~~~~~~
+main.h:88:3: warning: type defaults to ‘int’ in declaration of ‘data_of_program’ [-Wimplicit-int]
+main.h:98:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   98 | int (*function)(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:99:1: warning: no semicolon at end of struct or union
+   99 | } builtins;
+      | ^
+main.h:101:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  101 | void inicialize_data(data_of_program *inp, int arc, char *argv[], char **env);
+      |                      ^~~~~~~~~~~~~~~
+main.h:102:27: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  102 | void sisifo(char *prompt, data_of_program *data);
+      |                           ^~~~~~~~~~~~~~~
+main.h:18:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘attribute’
+   18 | #define UNUSED attribute((unused))
+      |                ^~~~~~~~~
+main.h:103:28: note: in expansion of macro ‘UNUSED’
+  103 | void handle_ctrl_c(int opr UNUSED);
+      |                            ^~~~~~
+main.h:105:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  105 | void expand_variables(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:106:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  106 | void expand_alias(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:109:15: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  109 | void tokenize(data_of_program *data);
+      |               ^~~~~~~~~~~~~~~
+main.h:112:13: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  112 | int execute(data_of_program *data);
+      |             ^~~~~~~~~~~~~~~
+main.h:114:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  114 | int builtins_list(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:117:26: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  117 | void free_recurrent_data(data_of_program *data);
+      |                          ^~~~~~~~~~~~~~~
+main.h:118:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  118 | void free_all_data(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:120:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  120 | int builtin_env(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:121:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  121 | int builtin_set_env(data_of_program *data);
+      |                     ^~~~~~~~~~~~~~~
+main.h:122:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  122 | int builtin_unset_env(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:124:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  124 | char *env_get_key(char *name, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:125:41: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  125 | int env_set_key(char *key, char *value, data_of_program *data);
+      |                                         ^~~~~~~~~~~~~~~
+main.h:126:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  126 | int env_remove_key(char *key, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:127:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  127 | void print_environ(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:129:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  129 | int builtin_exit(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:130:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  130 | int builtin_cd(data_of_program *input);
+      |                ^~~~~~~~~~~~~~~
+main.h:131:24: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  131 | int set_work_directory(data_of_program *input, char *new_dir);
+      |                        ^~~~~~~~~~~~~~~
+main.h:132:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  132 | int builtin_help(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:133:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  133 | int builtin_alias(data_of_program *input);
+      |                   ^~~~~~~~~~~~~~~
+main.h:135:14: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  135 | int _getline(data_of_program *input);
+      |              ^~~~~~~~~~~~~~~
+main.h:143:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  143 | int find_program(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:144:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  144 | char **tokenize_path(data_of_program *input);
+      |                      ^~~~~~~~~~~~~~~
+main.h:148:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  148 | int _print_error(int errorcode, data_of_program *input);
+      |                                 ^~~~~~~~~~~~~~~
+list_b.c:10:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   10 | int builtins_ls(data_of_program *data)
+      |                 ^~~~~~~~~~~~~~~
+In file included from main.c:1:
+main.h:23:1: error: expected identifier or ‘(’ before string constant
+   23 | "cd:\tcd [dir]\n\n"
+      | ^~~~~~~~~~~~~~~~~~~
+main.h:88:3: warning: data definition has no type or storage class
+   88 | } data_of_program;
+      |   ^~~~~~~~~~~~~~~
+main.h:88:3: warning: type defaults to ‘int’ in declaration of ‘data_of_program’ [-Wimplicit-int]
+main.h:98:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   98 | int (*function)(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:99:1: warning: no semicolon at end of struct or union
+   99 | } builtins;
+      | ^
+main.h:101:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  101 | void inicialize_data(data_of_program *inp, int arc, char *argv[], char **env);
+      |                      ^~~~~~~~~~~~~~~
+main.h:102:27: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  102 | void sisifo(char *prompt, data_of_program *data);
+      |                           ^~~~~~~~~~~~~~~
+main.h:18:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘attribute’
+   18 | #define UNUSED attribute((unused))
+      |                ^~~~~~~~~
+main.h:103:28: note: in expansion of macro ‘UNUSED’
+  103 | void handle_ctrl_c(int opr UNUSED);
+      |                            ^~~~~~
+main.h:105:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  105 | void expand_variables(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:106:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  106 | void expand_alias(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:109:15: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  109 | void tokenize(data_of_program *data);
+      |               ^~~~~~~~~~~~~~~
+main.h:112:13: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  112 | int execute(data_of_program *data);
+      |             ^~~~~~~~~~~~~~~
+main.h:114:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  114 | int builtins_list(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:117:26: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  117 | void free_recurrent_data(data_of_program *data);
+      |                          ^~~~~~~~~~~~~~~
+main.h:118:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  118 | void free_all_data(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:120:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  120 | int builtin_env(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:121:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  121 | int builtin_set_env(data_of_program *data);
+      |                     ^~~~~~~~~~~~~~~
+main.h:122:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  122 | int builtin_unset_env(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:124:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  124 | char *env_get_key(char *name, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:125:41: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  125 | int env_set_key(char *key, char *value, data_of_program *data);
+      |                                         ^~~~~~~~~~~~~~~
+main.h:126:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  126 | int env_remove_key(char *key, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:127:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  127 | void print_environ(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:129:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  129 | int builtin_exit(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:130:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  130 | int builtin_cd(data_of_program *input);
+      |                ^~~~~~~~~~~~~~~
+main.h:131:24: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  131 | int set_work_directory(data_of_program *input, char *new_dir);
+      |                        ^~~~~~~~~~~~~~~
+main.h:132:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  132 | int builtin_help(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:133:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  133 | int builtin_alias(data_of_program *input);
+      |                   ^~~~~~~~~~~~~~~
+main.h:135:14: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  135 | int _getline(data_of_program *input);
+      |              ^~~~~~~~~~~~~~~
+main.h:143:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  143 | int find_program(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:144:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  144 | char **tokenize_path(data_of_program *input);
+      |                      ^~~~~~~~~~~~~~~
+main.h:148:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  148 | int _print_error(int errorcode, data_of_program *input);
+      |                                 ^~~~~~~~~~~~~~~
+main.c: In function ‘main’:
+main.c:12:24: error: expected ‘;’ before ‘data_struct’
+   12 |         data_of_program data_struct = {NULL}, *data = &data_struct;
+      |                        ^~~~~~~~~~~~
+      |                        ;
+main.c:15:9: warning: implicit declaration of function ‘inicialize_data’ [-Wimplicit-function-declaration]
+   15 |         inicialize_data(data, argc, argv, env);
+      |         ^~~~~~~~~~~~~~~
+main.c:15:25: error: ‘data’ undeclared (first use in this function)
+   15 |         inicialize_data(data, argc, argv, env);
+      |                         ^~~~
+main.c:15:25: note: each undeclared identifier is reported only once for each function it appears in
+main.c:17:24: error: ‘handle_ctrl_c’ undeclared (first use in this function)
+   17 |         signal(SIGINT, handle_ctrl_c);
+      |                        ^~~~~~~~~~~~~
+main.c:25:9: warning: implicit declaration of function ‘sisifo’ [-Wimplicit-function-declaration]
+   25 |         sisifo(prompt, data);
+      |         ^~~~~~
+main.c: At top level:
+main.h:18:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘attribute’
+   18 | #define UNUSED attribute((unused))
+      |                ^~~~~~~~~
+main.c:33:28: note: in expansion of macro ‘UNUSED’
+   33 | void handle_ctrl_c(int opr UNUSED)
+      |                            ^~~~~~
+main.c:47:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   47 | void inicialize_data(data_of_program *inp, int argc, char *argv[], char **env)
+      |                      ^~~~~~~~~~~~~~~
+main.c:93:27: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   93 | void sisifo(char *prompt, data_of_program *data)
+      |                           ^~~~~~~~~~~~~~~
+In file included from more_b.c:1:
+main.h:23:1: error: expected identifier or ‘(’ before string constant
+   23 | "cd:\tcd [dir]\n\n"
+      | ^~~~~~~~~~~~~~~~~~~
+main.h:88:3: warning: data definition has no type or storage class
+   88 | } data_of_program;
+      |   ^~~~~~~~~~~~~~~
+main.h:88:3: warning: type defaults to ‘int’ in declaration of ‘data_of_program’ [-Wimplicit-int]
+main.h:98:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   98 | int (*function)(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:99:1: warning: no semicolon at end of struct or union
+   99 | } builtins;
+      | ^
+main.h:101:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  101 | void inicialize_data(data_of_program *inp, int arc, char *argv[], char **env);
+      |                      ^~~~~~~~~~~~~~~
+main.h:102:27: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  102 | void sisifo(char *prompt, data_of_program *data);
+      |                           ^~~~~~~~~~~~~~~
+main.h:18:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘attribute’
+   18 | #define UNUSED attribute((unused))
+      |                ^~~~~~~~~
+main.h:103:28: note: in expansion of macro ‘UNUSED’
+  103 | void handle_ctrl_c(int opr UNUSED);
+      |                            ^~~~~~
+main.h:105:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  105 | void expand_variables(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:106:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  106 | void expand_alias(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:109:15: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  109 | void tokenize(data_of_program *data);
+      |               ^~~~~~~~~~~~~~~
+main.h:112:13: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  112 | int execute(data_of_program *data);
+      |             ^~~~~~~~~~~~~~~
+main.h:114:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  114 | int builtins_list(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:117:26: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  117 | void free_recurrent_data(data_of_program *data);
+      |                          ^~~~~~~~~~~~~~~
+main.h:118:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  118 | void free_all_data(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:120:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  120 | int builtin_env(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:121:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  121 | int builtin_set_env(data_of_program *data);
+      |                     ^~~~~~~~~~~~~~~
+main.h:122:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  122 | int builtin_unset_env(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:124:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  124 | char *env_get_key(char *name, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:125:41: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  125 | int env_set_key(char *key, char *value, data_of_program *data);
+      |                                         ^~~~~~~~~~~~~~~
+main.h:126:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  126 | int env_remove_key(char *key, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:127:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  127 | void print_environ(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:129:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  129 | int builtin_exit(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:130:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  130 | int builtin_cd(data_of_program *input);
+      |                ^~~~~~~~~~~~~~~
+main.h:131:24: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  131 | int set_work_directory(data_of_program *input, char *new_dir);
+      |                        ^~~~~~~~~~~~~~~
+main.h:132:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  132 | int builtin_help(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:133:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  133 | int builtin_alias(data_of_program *input);
+      |                   ^~~~~~~~~~~~~~~
+main.h:135:14: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  135 | int _getline(data_of_program *input);
+      |              ^~~~~~~~~~~~~~~
+main.h:143:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  143 | int find_program(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:144:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  144 | char **tokenize_path(data_of_program *input);
+      |                      ^~~~~~~~~~~~~~~
+main.h:148:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  148 | int _print_error(int errorcode, data_of_program *input);
+      |                                 ^~~~~~~~~~~~~~~
+more_b.c:8:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+    8 | int builtin_exit(data_of_program *input)
+      |                  ^~~~~~~~~~~~~~~
+more_b.c:32:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   32 | int builtin_cd(data_of_program *input)
+      |                ^~~~~~~~~~~~~~~
+more_b.c:71:24: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   71 | int set_work_directory(data_of_program *input, char *new_dir)
+      |                        ^~~~~~~~~~~~~~~
+more_b.c:97:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   97 | int builtin_help(data_of_program *input)
+      |                  ^~~~~~~~~~~~~~~
+more_b.c:140:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  140 | int builtin_alias(data_of_program *input)
+      |                   ^~~~~~~~~~~~~~~
+In file included from mygetline.c:1:
+main.h:23:1: error: expected identifier or ‘(’ before string constant
+   23 | "cd:\tcd [dir]\n\n"
+      | ^~~~~~~~~~~~~~~~~~~
+main.h:88:3: warning: data definition has no type or storage class
+   88 | } data_of_program;
+      |   ^~~~~~~~~~~~~~~
+main.h:88:3: warning: type defaults to ‘int’ in declaration of ‘data_of_program’ [-Wimplicit-int]
+main.h:98:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   98 | int (*function)(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:99:1: warning: no semicolon at end of struct or union
+   99 | } builtins;
+      | ^
+main.h:101:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  101 | void inicialize_data(data_of_program *inp, int arc, char *argv[], char **env);
+      |                      ^~~~~~~~~~~~~~~
+main.h:102:27: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  102 | void sisifo(char *prompt, data_of_program *data);
+      |                           ^~~~~~~~~~~~~~~
+main.h:18:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘attribute’
+   18 | #define UNUSED attribute((unused))
+      |                ^~~~~~~~~
+main.h:103:28: note: in expansion of macro ‘UNUSED’
+  103 | void handle_ctrl_c(int opr UNUSED);
+      |                            ^~~~~~
+main.h:105:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  105 | void expand_variables(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:106:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  106 | void expand_alias(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:109:15: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  109 | void tokenize(data_of_program *data);
+      |               ^~~~~~~~~~~~~~~
+main.h:112:13: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  112 | int execute(data_of_program *data);
+      |             ^~~~~~~~~~~~~~~
+main.h:114:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  114 | int builtins_list(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:117:26: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  117 | void free_recurrent_data(data_of_program *data);
+      |                          ^~~~~~~~~~~~~~~
+main.h:118:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  118 | void free_all_data(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:120:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  120 | int builtin_env(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:121:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  121 | int builtin_set_env(data_of_program *data);
+      |                     ^~~~~~~~~~~~~~~
+main.h:122:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  122 | int builtin_unset_env(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:124:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  124 | char *env_get_key(char *name, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:125:41: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  125 | int env_set_key(char *key, char *value, data_of_program *data);
+      |                                         ^~~~~~~~~~~~~~~
+main.h:126:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  126 | int env_remove_key(char *key, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:127:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  127 | void print_environ(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:129:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  129 | int builtin_exit(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:130:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  130 | int builtin_cd(data_of_program *input);
+      |                ^~~~~~~~~~~~~~~
+main.h:131:24: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  131 | int set_work_directory(data_of_program *input, char *new_dir);
+      |                        ^~~~~~~~~~~~~~~
+main.h:132:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  132 | int builtin_help(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:133:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  133 | int builtin_alias(data_of_program *input);
+      |                   ^~~~~~~~~~~~~~~
+main.h:135:14: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  135 | int _getline(data_of_program *input);
+      |              ^~~~~~~~~~~~~~~
+main.h:143:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  143 | int find_program(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:144:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  144 | char **tokenize_path(data_of_program *input);
+      |                      ^~~~~~~~~~~~~~~
+main.h:148:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  148 | int _print_error(int errorcode, data_of_program *input);
+      |                                 ^~~~~~~~~~~~~~~
+mygetline.c:8:14: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+    8 | int _getline(data_of_program *input)
+      |              ^~~~~~~~~~~~~~~
+In file included from numbers.c:1:
+main.h:23:1: error: expected identifier or ‘(’ before string constant
+   23 | "cd:\tcd [dir]\n\n"
+      | ^~~~~~~~~~~~~~~~~~~
+main.h:88:3: warning: data definition has no type or storage class
+   88 | } data_of_program;
+      |   ^~~~~~~~~~~~~~~
+main.h:88:3: warning: type defaults to ‘int’ in declaration of ‘data_of_program’ [-Wimplicit-int]
+main.h:98:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   98 | int (*function)(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:99:1: warning: no semicolon at end of struct or union
+   99 | } builtins;
+      | ^
+main.h:101:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  101 | void inicialize_data(data_of_program *inp, int arc, char *argv[], char **env);
+      |                      ^~~~~~~~~~~~~~~
+main.h:102:27: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  102 | void sisifo(char *prompt, data_of_program *data);
+      |                           ^~~~~~~~~~~~~~~
+main.h:18:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘attribute’
+   18 | #define UNUSED attribute((unused))
+      |                ^~~~~~~~~
+main.h:103:28: note: in expansion of macro ‘UNUSED’
+  103 | void handle_ctrl_c(int opr UNUSED);
+      |                            ^~~~~~
+main.h:105:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  105 | void expand_variables(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:106:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  106 | void expand_alias(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:109:15: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  109 | void tokenize(data_of_program *data);
+      |               ^~~~~~~~~~~~~~~
+main.h:112:13: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  112 | int execute(data_of_program *data);
+      |             ^~~~~~~~~~~~~~~
+main.h:114:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  114 | int builtins_list(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:117:26: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  117 | void free_recurrent_data(data_of_program *data);
+      |                          ^~~~~~~~~~~~~~~
+main.h:118:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  118 | void free_all_data(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:120:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  120 | int builtin_env(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:121:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  121 | int builtin_set_env(data_of_program *data);
+      |                     ^~~~~~~~~~~~~~~
+main.h:122:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  122 | int builtin_unset_env(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:124:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  124 | char *env_get_key(char *name, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:125:41: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  125 | int env_set_key(char *key, char *value, data_of_program *data);
+      |                                         ^~~~~~~~~~~~~~~
+main.h:126:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  126 | int env_remove_key(char *key, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:127:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  127 | void print_environ(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:129:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  129 | int builtin_exit(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:130:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  130 | int builtin_cd(data_of_program *input);
+      |                ^~~~~~~~~~~~~~~
+main.h:131:24: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  131 | int set_work_directory(data_of_program *input, char *new_dir);
+      |                        ^~~~~~~~~~~~~~~
+main.h:132:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  132 | int builtin_help(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:133:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  133 | int builtin_alias(data_of_program *input);
+      |                   ^~~~~~~~~~~~~~~
+main.h:135:14: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  135 | int _getline(data_of_program *input);
+      |              ^~~~~~~~~~~~~~~
+main.h:143:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  143 | int find_program(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:144:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  144 | char **tokenize_path(data_of_program *input);
+      |                      ^~~~~~~~~~~~~~~
+main.h:148:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  148 | int _print_error(int errorcode, data_of_program *input);
+      |                                 ^~~~~~~~~~~~~~~
+In file included from pathfinder.c:1:
+main.h:23:1: error: expected identifier or ‘(’ before string constant
+   23 | "cd:\tcd [dir]\n\n"
+      | ^~~~~~~~~~~~~~~~~~~
+main.h:88:3: warning: data definition has no type or storage class
+   88 | } data_of_program;
+      |   ^~~~~~~~~~~~~~~
+main.h:88:3: warning: type defaults to ‘int’ in declaration of ‘data_of_program’ [-Wimplicit-int]
+main.h:98:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   98 | int (*function)(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:99:1: warning: no semicolon at end of struct or union
+   99 | } builtins;
+      | ^
+main.h:101:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  101 | void inicialize_data(data_of_program *inp, int arc, char *argv[], char **env);
+      |                      ^~~~~~~~~~~~~~~
+main.h:102:27: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  102 | void sisifo(char *prompt, data_of_program *data);
+      |                           ^~~~~~~~~~~~~~~
+main.h:18:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘attribute’
+   18 | #define UNUSED attribute((unused))
+      |                ^~~~~~~~~
+main.h:103:28: note: in expansion of macro ‘UNUSED’
+  103 | void handle_ctrl_c(int opr UNUSED);
+      |                            ^~~~~~
+main.h:105:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  105 | void expand_variables(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:106:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  106 | void expand_alias(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:109:15: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  109 | void tokenize(data_of_program *data);
+      |               ^~~~~~~~~~~~~~~
+main.h:112:13: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  112 | int execute(data_of_program *data);
+      |             ^~~~~~~~~~~~~~~
+main.h:114:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  114 | int builtins_list(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:117:26: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  117 | void free_recurrent_data(data_of_program *data);
+      |                          ^~~~~~~~~~~~~~~
+main.h:118:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  118 | void free_all_data(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:120:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  120 | int builtin_env(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:121:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  121 | int builtin_set_env(data_of_program *data);
+      |                     ^~~~~~~~~~~~~~~
+main.h:122:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  122 | int builtin_unset_env(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:124:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  124 | char *env_get_key(char *name, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:125:41: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  125 | int env_set_key(char *key, char *value, data_of_program *data);
+      |                                         ^~~~~~~~~~~~~~~
+main.h:126:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  126 | int env_remove_key(char *key, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:127:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  127 | void print_environ(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:129:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  129 | int builtin_exit(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:130:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  130 | int builtin_cd(data_of_program *input);
+      |                ^~~~~~~~~~~~~~~
+main.h:131:24: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  131 | int set_work_directory(data_of_program *input, char *new_dir);
+      |                        ^~~~~~~~~~~~~~~
+main.h:132:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  132 | int builtin_help(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:133:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  133 | int builtin_alias(data_of_program *input);
+      |                   ^~~~~~~~~~~~~~~
+main.h:135:14: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  135 | int _getline(data_of_program *input);
+      |              ^~~~~~~~~~~~~~~
+main.h:143:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  143 | int find_program(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:144:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  144 | char **tokenize_path(data_of_program *input);
+      |                      ^~~~~~~~~~~~~~~
+main.h:148:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  148 | int _print_error(int errorcode, data_of_program *input);
+      |                                 ^~~~~~~~~~~~~~~
+pathfinder.c:8:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+    8 | int find_program(data_of_program *input)
+      |                  ^~~~~~~~~~~~~~~
+pathfinder.c:55:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   55 | char **tokenize_path(data_of_program *input)
+      |                      ^~~~~~~~~~~~~~~
+In file included from _print.c:1:
+main.h:23:1: error: expected identifier or ‘(’ before string constant
+   23 | "cd:\tcd [dir]\n\n"
+      | ^~~~~~~~~~~~~~~~~~~
+main.h:88:3: warning: data definition has no type or storage class
+   88 | } data_of_program;
+      |   ^~~~~~~~~~~~~~~
+main.h:88:3: warning: type defaults to ‘int’ in declaration of ‘data_of_program’ [-Wimplicit-int]
+main.h:98:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   98 | int (*function)(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:99:1: warning: no semicolon at end of struct or union
+   99 | } builtins;
+      | ^
+main.h:101:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  101 | void inicialize_data(data_of_program *inp, int arc, char *argv[], char **env);
+      |                      ^~~~~~~~~~~~~~~
+main.h:102:27: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  102 | void sisifo(char *prompt, data_of_program *data);
+      |                           ^~~~~~~~~~~~~~~
+main.h:18:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘attribute’
+   18 | #define UNUSED attribute((unused))
+      |                ^~~~~~~~~
+main.h:103:28: note: in expansion of macro ‘UNUSED’
+  103 | void handle_ctrl_c(int opr UNUSED);
+      |                            ^~~~~~
+main.h:105:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  105 | void expand_variables(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:106:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  106 | void expand_alias(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:109:15: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  109 | void tokenize(data_of_program *data);
+      |               ^~~~~~~~~~~~~~~
+main.h:112:13: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  112 | int execute(data_of_program *data);
+      |             ^~~~~~~~~~~~~~~
+main.h:114:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  114 | int builtins_list(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:117:26: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  117 | void free_recurrent_data(data_of_program *data);
+      |                          ^~~~~~~~~~~~~~~
+main.h:118:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  118 | void free_all_data(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:120:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  120 | int builtin_env(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:121:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  121 | int builtin_set_env(data_of_program *data);
+      |                     ^~~~~~~~~~~~~~~
+main.h:122:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  122 | int builtin_unset_env(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:124:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  124 | char *env_get_key(char *name, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:125:41: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  125 | int env_set_key(char *key, char *value, data_of_program *data);
+      |                                         ^~~~~~~~~~~~~~~
+main.h:126:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  126 | int env_remove_key(char *key, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:127:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  127 | void print_environ(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:129:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  129 | int builtin_exit(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:130:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  130 | int builtin_cd(data_of_program *input);
+      |                ^~~~~~~~~~~~~~~
+main.h:131:24: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  131 | int set_work_directory(data_of_program *input, char *new_dir);
+      |                        ^~~~~~~~~~~~~~~
+main.h:132:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  132 | int builtin_help(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:133:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  133 | int builtin_alias(data_of_program *input);
+      |                   ^~~~~~~~~~~~~~~
+main.h:135:14: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  135 | int _getline(data_of_program *input);
+      |              ^~~~~~~~~~~~~~~
+main.h:143:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  143 | int find_program(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:144:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  144 | char **tokenize_path(data_of_program *input);
+      |                      ^~~~~~~~~~~~~~~
+main.h:148:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  148 | int _print_error(int errorcode, data_of_program *input);
+      |                                 ^~~~~~~~~~~~~~~
+_print.c:28:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   28 | int _print_error(int errorcode, data_of_program *input)
+      |                                 ^~~~~~~~~~~~~~~
+_strings.c:1:10: fatal error: shell.h: No such file or directory
+    1 | #include "shell.h"
+      |          ^~~~~~~~~
+compilation terminated.
+_strtoken.c:1:10: fatal error: shell.h: No such file or directory
+    1 | #include "shell.h"
+      |          ^~~~~~~~~
+compilation terminated.
+In file included from tokens.c:1:
+main.h:23:1: error: expected identifier or ‘(’ before string constant
+   23 | "cd:\tcd [dir]\n\n"
+      | ^~~~~~~~~~~~~~~~~~~
+main.h:88:3: warning: data definition has no type or storage class
+   88 | } data_of_program;
+      |   ^~~~~~~~~~~~~~~
+main.h:88:3: warning: type defaults to ‘int’ in declaration of ‘data_of_program’ [-Wimplicit-int]
+main.h:98:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   98 | int (*function)(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:99:1: warning: no semicolon at end of struct or union
+   99 | } builtins;
+      | ^
+main.h:101:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  101 | void inicialize_data(data_of_program *inp, int arc, char *argv[], char **env);
+      |                      ^~~~~~~~~~~~~~~
+main.h:102:27: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  102 | void sisifo(char *prompt, data_of_program *data);
+      |                           ^~~~~~~~~~~~~~~
+main.h:18:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘attribute’
+   18 | #define UNUSED attribute((unused))
+      |                ^~~~~~~~~
+main.h:103:28: note: in expansion of macro ‘UNUSED’
+  103 | void handle_ctrl_c(int opr UNUSED);
+      |                            ^~~~~~
+main.h:105:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  105 | void expand_variables(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:106:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  106 | void expand_alias(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:109:15: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  109 | void tokenize(data_of_program *data);
+      |               ^~~~~~~~~~~~~~~
+main.h:112:13: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  112 | int execute(data_of_program *data);
+      |             ^~~~~~~~~~~~~~~
+main.h:114:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  114 | int builtins_list(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:117:26: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  117 | void free_recurrent_data(data_of_program *data);
+      |                          ^~~~~~~~~~~~~~~
+main.h:118:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  118 | void free_all_data(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:120:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  120 | int builtin_env(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:121:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  121 | int builtin_set_env(data_of_program *data);
+      |                     ^~~~~~~~~~~~~~~
+main.h:122:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  122 | int builtin_unset_env(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:124:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  124 | char *env_get_key(char *name, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:125:41: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  125 | int env_set_key(char *key, char *value, data_of_program *data);
+      |                                         ^~~~~~~~~~~~~~~
+main.h:126:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  126 | int env_remove_key(char *key, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:127:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  127 | void print_environ(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:129:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  129 | int builtin_exit(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:130:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  130 | int builtin_cd(data_of_program *input);
+      |                ^~~~~~~~~~~~~~~
+main.h:131:24: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  131 | int set_work_directory(data_of_program *input, char *new_dir);
+      |                        ^~~~~~~~~~~~~~~
+main.h:132:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  132 | int builtin_help(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:133:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  133 | int builtin_alias(data_of_program *input);
+      |                   ^~~~~~~~~~~~~~~
+main.h:135:14: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  135 | int _getline(data_of_program *input);
+      |              ^~~~~~~~~~~~~~~
+main.h:143:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  143 | int find_program(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:144:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  144 | char **tokenize_path(data_of_program *input);
+      |                      ^~~~~~~~~~~~~~~
+main.h:148:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  148 | int _print_error(int errorcode, data_of_program *input);
+      |                                 ^~~~~~~~~~~~~~~
+tokens.c:8:15: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+    8 | void tokenize(data_of_program *data)
+      |               ^~~~~~~~~~~~~~~
+njuguna@njuguna-al:~/Desktop/alx/1/simple_shell$ gcc compile *.c > errors.txt
+In file included from aliases.c:1:
+main.h:23:1: error: expected identifier or ‘(’ before string constant
+   23 | "cd:\tcd [dir]\n\n"
+      | ^~~~~~~~~~~~~~~~~~~
+main.h:88:3: warning: data definition has no type or storage class
+   88 | } data_of_program;
+      |   ^~~~~~~~~~~~~~~
+main.h:88:3: warning: type defaults to ‘int’ in declaration of ‘data_of_program’ [-Wimplicit-int]
+main.h:98:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   98 | int (*function)(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:99:1: warning: no semicolon at end of struct or union
+   99 | } builtins;
+      | ^
+main.h:101:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  101 | void inicialize_data(data_of_program *inp, int arc, char *argv[], char **env);
+      |                      ^~~~~~~~~~~~~~~
+main.h:102:27: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  102 | void sisifo(char *prompt, data_of_program *data);
+      |                           ^~~~~~~~~~~~~~~
+main.h:18:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘attribute’
+   18 | #define UNUSED attribute((unused))
+      |                ^~~~~~~~~
+main.h:103:28: note: in expansion of macro ‘UNUSED’
+  103 | void handle_ctrl_c(int opr UNUSED);
+      |                            ^~~~~~
+main.h:105:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  105 | void expand_variables(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:106:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  106 | void expand_alias(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:109:15: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  109 | void tokenize(data_of_program *data);
+      |               ^~~~~~~~~~~~~~~
+main.h:112:13: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  112 | int execute(data_of_program *data);
+      |             ^~~~~~~~~~~~~~~
+main.h:114:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  114 | int builtins_list(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:117:26: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  117 | void free_recurrent_data(data_of_program *data);
+      |                          ^~~~~~~~~~~~~~~
+main.h:118:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  118 | void free_all_data(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:120:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  120 | int builtin_env(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:121:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  121 | int builtin_set_env(data_of_program *data);
+      |                     ^~~~~~~~~~~~~~~
+main.h:122:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  122 | int builtin_unset_env(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:124:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  124 | char *env_get_key(char *name, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:125:41: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  125 | int env_set_key(char *key, char *value, data_of_program *data);
+      |                                         ^~~~~~~~~~~~~~~
+main.h:126:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  126 | int env_remove_key(char *key, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:127:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  127 | void print_environ(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:129:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  129 | int builtin_exit(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:130:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  130 | int builtin_cd(data_of_program *input);
+      |                ^~~~~~~~~~~~~~~
+main.h:131:24: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  131 | int set_work_directory(data_of_program *input, char *new_dir);
+      |                        ^~~~~~~~~~~~~~~
+main.h:132:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  132 | int builtin_help(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:133:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  133 | int builtin_alias(data_of_program *input);
+      |                   ^~~~~~~~~~~~~~~
+main.h:135:14: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  135 | int _getline(data_of_program *input);
+      |              ^~~~~~~~~~~~~~~
+main.h:143:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  143 | int find_program(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:144:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  144 | char **tokenize_path(data_of_program *input);
+      |                      ^~~~~~~~~~~~~~~
+main.h:148:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  148 | int _print_error(int errorcode, data_of_program *input);
+      |                                 ^~~~~~~~~~~~~~~
+aliases.c:9:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+    9 | int display_alias(data_of_program *input, char *alias)
+      |                   ^~~~~~~~~~~~~~~
+aliases.c:46:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   46 | char *get_alias(data_of_program *input, char *name)
+      |                 ^~~~~~~~~~~~~~~
+aliases.c:73:28: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   73 | int set_alias(char *alias, data_of_program *input)
+      |                            ^~~~~~~~~~~~~~~
+In file included from env_b.c:1:
+main.h:23:1: error: expected identifier or ‘(’ before string constant
+   23 | "cd:\tcd [dir]\n\n"
+      | ^~~~~~~~~~~~~~~~~~~
+main.h:88:3: warning: data definition has no type or storage class
+   88 | } data_of_program;
+      |   ^~~~~~~~~~~~~~~
+main.h:88:3: warning: type defaults to ‘int’ in declaration of ‘data_of_program’ [-Wimplicit-int]
+main.h:98:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   98 | int (*function)(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:99:1: warning: no semicolon at end of struct or union
+   99 | } builtins;
+      | ^
+main.h:101:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  101 | void inicialize_data(data_of_program *inp, int arc, char *argv[], char **env);
+      |                      ^~~~~~~~~~~~~~~
+main.h:102:27: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  102 | void sisifo(char *prompt, data_of_program *data);
+      |                           ^~~~~~~~~~~~~~~
+main.h:18:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘attribute’
+   18 | #define UNUSED attribute((unused))
+      |                ^~~~~~~~~
+main.h:103:28: note: in expansion of macro ‘UNUSED’
+  103 | void handle_ctrl_c(int opr UNUSED);
+      |                            ^~~~~~
+main.h:105:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  105 | void expand_variables(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:106:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  106 | void expand_alias(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:109:15: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  109 | void tokenize(data_of_program *data);
+      |               ^~~~~~~~~~~~~~~
+main.h:112:13: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  112 | int execute(data_of_program *data);
+      |             ^~~~~~~~~~~~~~~
+main.h:114:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  114 | int builtins_list(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:117:26: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  117 | void free_recurrent_data(data_of_program *data);
+      |                          ^~~~~~~~~~~~~~~
+main.h:118:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  118 | void free_all_data(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:120:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  120 | int builtin_env(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:121:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  121 | int builtin_set_env(data_of_program *data);
+      |                     ^~~~~~~~~~~~~~~
+main.h:122:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  122 | int builtin_unset_env(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:124:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  124 | char *env_get_key(char *name, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:125:41: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  125 | int env_set_key(char *key, char *value, data_of_program *data);
+      |                                         ^~~~~~~~~~~~~~~
+main.h:126:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  126 | int env_remove_key(char *key, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:127:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  127 | void print_environ(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:129:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  129 | int builtin_exit(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:130:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  130 | int builtin_cd(data_of_program *input);
+      |                ^~~~~~~~~~~~~~~
+main.h:131:24: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  131 | int set_work_directory(data_of_program *input, char *new_dir);
+      |                        ^~~~~~~~~~~~~~~
+main.h:132:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  132 | int builtin_help(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:133:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  133 | int builtin_alias(data_of_program *input);
+      |                   ^~~~~~~~~~~~~~~
+main.h:135:14: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  135 | int _getline(data_of_program *input);
+      |              ^~~~~~~~~~~~~~~
+main.h:143:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  143 | int find_program(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:144:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  144 | char **tokenize_path(data_of_program *input);
+      |                      ^~~~~~~~~~~~~~~
+main.h:148:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  148 | int _print_error(int errorcode, data_of_program *input);
+      |                                 ^~~~~~~~~~~~~~~
+env_b.c:8:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+    8 | int builtin_environ(data_of_program *prog_data)
+      |                     ^~~~~~~~~~~~~~~
+env_b.c:55:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   55 | int builtin_add_env(data_of_program *prog_data)
+      |                     ^~~~~~~~~~~~~~~
+env_b.c:77:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   77 | int builtin_unadd_env(data_of_program *prog_data)
+      |                       ^~~~~~~~~~~~~~~
+In file included from env_m.c:1:
+main.h:23:1: error: expected identifier or ‘(’ before string constant
+   23 | "cd:\tcd [dir]\n\n"
+      | ^~~~~~~~~~~~~~~~~~~
+main.h:88:3: warning: data definition has no type or storage class
+   88 | } data_of_program;
+      |   ^~~~~~~~~~~~~~~
+main.h:88:3: warning: type defaults to ‘int’ in declaration of ‘data_of_program’ [-Wimplicit-int]
+main.h:98:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   98 | int (*function)(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:99:1: warning: no semicolon at end of struct or union
+   99 | } builtins;
+      | ^
+main.h:101:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  101 | void inicialize_data(data_of_program *inp, int arc, char *argv[], char **env);
+      |                      ^~~~~~~~~~~~~~~
+main.h:102:27: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  102 | void sisifo(char *prompt, data_of_program *data);
+      |                           ^~~~~~~~~~~~~~~
+main.h:18:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘attribute’
+   18 | #define UNUSED attribute((unused))
+      |                ^~~~~~~~~
+main.h:103:28: note: in expansion of macro ‘UNUSED’
+  103 | void handle_ctrl_c(int opr UNUSED);
+      |                            ^~~~~~
+main.h:105:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  105 | void expand_variables(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:106:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  106 | void expand_alias(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:109:15: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  109 | void tokenize(data_of_program *data);
+      |               ^~~~~~~~~~~~~~~
+main.h:112:13: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  112 | int execute(data_of_program *data);
+      |             ^~~~~~~~~~~~~~~
+main.h:114:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  114 | int builtins_list(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:117:26: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  117 | void free_recurrent_data(data_of_program *data);
+      |                          ^~~~~~~~~~~~~~~
+main.h:118:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  118 | void free_all_data(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:120:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  120 | int builtin_env(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:121:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  121 | int builtin_set_env(data_of_program *data);
+      |                     ^~~~~~~~~~~~~~~
+main.h:122:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  122 | int builtin_unset_env(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:124:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  124 | char *env_get_key(char *name, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:125:41: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  125 | int env_set_key(char *key, char *value, data_of_program *data);
+      |                                         ^~~~~~~~~~~~~~~
+main.h:126:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  126 | int env_remove_key(char *key, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:127:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  127 | void print_environ(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:129:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  129 | int builtin_exit(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:130:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  130 | int builtin_cd(data_of_program *input);
+      |                ^~~~~~~~~~~~~~~
+main.h:131:24: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  131 | int set_work_directory(data_of_program *input, char *new_dir);
+      |                        ^~~~~~~~~~~~~~~
+main.h:132:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  132 | int builtin_help(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:133:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  133 | int builtin_alias(data_of_program *input);
+      |                   ^~~~~~~~~~~~~~~
+main.h:135:14: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  135 | int _getline(data_of_program *input);
+      |              ^~~~~~~~~~~~~~~
+main.h:143:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  143 | int find_program(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:144:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  144 | char **tokenize_path(data_of_program *input);
+      |                      ^~~~~~~~~~~~~~~
+main.h:148:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  148 | int _print_error(int errorcode, data_of_program *input);
+      |                                 ^~~~~~~~~~~~~~~
+env_m.c:9:34: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+    9 | char *get_env_val(char *key_var, data_of_program *prog_data)
+      |                                  ^~~~~~~~~~~~~~~
+env_m.c:41:50: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   41 | int add_env_key(char *key_name, char *new_value, data_of_program *prog_data)
+      |                                                  ^~~~~~~~~~~~~~~
+env_m.c:80:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   80 | int rmv_env_key(char *key_name, data_of_program *prog_data)
+      |                                 ^~~~~~~~~~~~~~~
+env_m.c:118:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  118 | void display_environ(data_of_program *prog_data)
+      |                      ^~~~~~~~~~~~~~~
+In file included from execute_program.c:1:
+main.h:23:1: error: expected identifier or ‘(’ before string constant
+   23 | "cd:\tcd [dir]\n\n"
+      | ^~~~~~~~~~~~~~~~~~~
+main.h:88:3: warning: data definition has no type or storage class
+   88 | } data_of_program;
+      |   ^~~~~~~~~~~~~~~
+main.h:88:3: warning: type defaults to ‘int’ in declaration of ‘data_of_program’ [-Wimplicit-int]
+main.h:98:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   98 | int (*function)(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:99:1: warning: no semicolon at end of struct or union
+   99 | } builtins;
+      | ^
+main.h:101:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  101 | void inicialize_data(data_of_program *inp, int arc, char *argv[], char **env);
+      |                      ^~~~~~~~~~~~~~~
+main.h:102:27: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  102 | void sisifo(char *prompt, data_of_program *data);
+      |                           ^~~~~~~~~~~~~~~
+main.h:18:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘attribute’
+   18 | #define UNUSED attribute((unused))
+      |                ^~~~~~~~~
+main.h:103:28: note: in expansion of macro ‘UNUSED’
+  103 | void handle_ctrl_c(int opr UNUSED);
+      |                            ^~~~~~
+main.h:105:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  105 | void expand_variables(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:106:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  106 | void expand_alias(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:109:15: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  109 | void tokenize(data_of_program *data);
+      |               ^~~~~~~~~~~~~~~
+main.h:112:13: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  112 | int execute(data_of_program *data);
+      |             ^~~~~~~~~~~~~~~
+main.h:114:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  114 | int builtins_list(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:117:26: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  117 | void free_recurrent_data(data_of_program *data);
+      |                          ^~~~~~~~~~~~~~~
+main.h:118:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  118 | void free_all_data(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:120:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  120 | int builtin_env(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:121:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  121 | int builtin_set_env(data_of_program *data);
+      |                     ^~~~~~~~~~~~~~~
+main.h:122:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  122 | int builtin_unset_env(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:124:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  124 | char *env_get_key(char *name, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:125:41: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  125 | int env_set_key(char *key, char *value, data_of_program *data);
+      |                                         ^~~~~~~~~~~~~~~
+main.h:126:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  126 | int env_remove_key(char *key, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:127:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  127 | void print_environ(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:129:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  129 | int builtin_exit(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:130:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  130 | int builtin_cd(data_of_program *input);
+      |                ^~~~~~~~~~~~~~~
+main.h:131:24: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  131 | int set_work_directory(data_of_program *input, char *new_dir);
+      |                        ^~~~~~~~~~~~~~~
+main.h:132:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  132 | int builtin_help(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:133:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  133 | int builtin_alias(data_of_program *input);
+      |                   ^~~~~~~~~~~~~~~
+main.h:135:14: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  135 | int _getline(data_of_program *input);
+      |              ^~~~~~~~~~~~~~~
+main.h:143:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  143 | int find_program(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:144:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  144 | char **tokenize_path(data_of_program *input);
+      |                      ^~~~~~~~~~~~~~~
+main.h:148:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  148 | int _print_error(int errorcode, data_of_program *input);
+      |                                 ^~~~~~~~~~~~~~~
+execute_program.c:7:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+    7 | int execute_prog(data_of_program *prog_data)
+      |                  ^~~~~~~~~~~~~~~
+In file included from expand_function.c:1:
+main.h:23:1: error: expected identifier or ‘(’ before string constant
+   23 | "cd:\tcd [dir]\n\n"
+      | ^~~~~~~~~~~~~~~~~~~
+main.h:88:3: warning: data definition has no type or storage class
+   88 | } data_of_program;
+      |   ^~~~~~~~~~~~~~~
+main.h:88:3: warning: type defaults to ‘int’ in declaration of ‘data_of_program’ [-Wimplicit-int]
+main.h:98:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   98 | int (*function)(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:99:1: warning: no semicolon at end of struct or union
+   99 | } builtins;
+      | ^
+main.h:101:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  101 | void inicialize_data(data_of_program *inp, int arc, char *argv[], char **env);
+      |                      ^~~~~~~~~~~~~~~
+main.h:102:27: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  102 | void sisifo(char *prompt, data_of_program *data);
+      |                           ^~~~~~~~~~~~~~~
+main.h:18:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘attribute’
+   18 | #define UNUSED attribute((unused))
+      |                ^~~~~~~~~
+main.h:103:28: note: in expansion of macro ‘UNUSED’
+  103 | void handle_ctrl_c(int opr UNUSED);
+      |                            ^~~~~~
+main.h:105:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  105 | void expand_variables(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:106:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  106 | void expand_alias(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:109:15: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  109 | void tokenize(data_of_program *data);
+      |               ^~~~~~~~~~~~~~~
+main.h:112:13: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  112 | int execute(data_of_program *data);
+      |             ^~~~~~~~~~~~~~~
+main.h:114:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  114 | int builtins_list(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:117:26: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  117 | void free_recurrent_data(data_of_program *data);
+      |                          ^~~~~~~~~~~~~~~
+main.h:118:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  118 | void free_all_data(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:120:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  120 | int builtin_env(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:121:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  121 | int builtin_set_env(data_of_program *data);
+      |                     ^~~~~~~~~~~~~~~
+main.h:122:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  122 | int builtin_unset_env(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:124:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  124 | char *env_get_key(char *name, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:125:41: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  125 | int env_set_key(char *key, char *value, data_of_program *data);
+      |                                         ^~~~~~~~~~~~~~~
+main.h:126:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  126 | int env_remove_key(char *key, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:127:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  127 | void print_environ(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:129:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  129 | int builtin_exit(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:130:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  130 | int builtin_cd(data_of_program *input);
+      |                ^~~~~~~~~~~~~~~
+main.h:131:24: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  131 | int set_work_directory(data_of_program *input, char *new_dir);
+      |                        ^~~~~~~~~~~~~~~
+main.h:132:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  132 | int builtin_help(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:133:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  133 | int builtin_alias(data_of_program *input);
+      |                   ^~~~~~~~~~~~~~~
+main.h:135:14: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  135 | int _getline(data_of_program *input);
+      |              ^~~~~~~~~~~~~~~
+main.h:143:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  143 | int find_program(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:144:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  144 | char **tokenize_path(data_of_program *input);
+      |                      ^~~~~~~~~~~~~~~
+main.h:148:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  148 | int _print_error(int errorcode, data_of_program *input);
+      |                                 ^~~~~~~~~~~~~~~
+expand_function.c:10:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   10 | void expand_vars(data_of_program *prog_data)
+      |                  ^~~~~~~~~~~~~~~
+expand_function.c:61:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   61 | void alias_expand(data_of_program *prog_data)
+      |                   ^~~~~~~~~~~~~~~
+expand_function.c: In function ‘add_buffer’:
+expand_function.c:107:15: warning: implicit declaration of function ‘str_len’; did you mean ‘strnlen’? [-Wimplicit-function-declaration]
+  107 |         len = str_len(buffer);
+      |               ^~~~~~~
+      |               strnlen
+In file included from free.c:1:
+main.h:23:1: error: expected identifier or ‘(’ before string constant
+   23 | "cd:\tcd [dir]\n\n"
+      | ^~~~~~~~~~~~~~~~~~~
+main.h:88:3: warning: data definition has no type or storage class
+   88 | } data_of_program;
+      |   ^~~~~~~~~~~~~~~
+main.h:88:3: warning: type defaults to ‘int’ in declaration of ‘data_of_program’ [-Wimplicit-int]
+main.h:98:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   98 | int (*function)(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:99:1: warning: no semicolon at end of struct or union
+   99 | } builtins;
+      | ^
+main.h:101:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  101 | void inicialize_data(data_of_program *inp, int arc, char *argv[], char **env);
+      |                      ^~~~~~~~~~~~~~~
+main.h:102:27: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  102 | void sisifo(char *prompt, data_of_program *data);
+      |                           ^~~~~~~~~~~~~~~
+main.h:18:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘attribute’
+   18 | #define UNUSED attribute((unused))
+      |                ^~~~~~~~~
+main.h:103:28: note: in expansion of macro ‘UNUSED’
+  103 | void handle_ctrl_c(int opr UNUSED);
+      |                            ^~~~~~
+main.h:105:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  105 | void expand_variables(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:106:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  106 | void expand_alias(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:109:15: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  109 | void tokenize(data_of_program *data);
+      |               ^~~~~~~~~~~~~~~
+main.h:112:13: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  112 | int execute(data_of_program *data);
+      |             ^~~~~~~~~~~~~~~
+main.h:114:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  114 | int builtins_list(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:117:26: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  117 | void free_recurrent_data(data_of_program *data);
+      |                          ^~~~~~~~~~~~~~~
+main.h:118:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  118 | void free_all_data(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:120:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  120 | int builtin_env(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:121:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  121 | int builtin_set_env(data_of_program *data);
+      |                     ^~~~~~~~~~~~~~~
+main.h:122:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  122 | int builtin_unset_env(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:124:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  124 | char *env_get_key(char *name, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:125:41: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  125 | int env_set_key(char *key, char *value, data_of_program *data);
+      |                                         ^~~~~~~~~~~~~~~
+main.h:126:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  126 | int env_remove_key(char *key, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:127:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  127 | void print_environ(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:129:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  129 | int builtin_exit(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:130:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  130 | int builtin_cd(data_of_program *input);
+      |                ^~~~~~~~~~~~~~~
+main.h:131:24: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  131 | int set_work_directory(data_of_program *input, char *new_dir);
+      |                        ^~~~~~~~~~~~~~~
+main.h:132:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  132 | int builtin_help(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:133:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  133 | int builtin_alias(data_of_program *input);
+      |                   ^~~~~~~~~~~~~~~
+main.h:135:14: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  135 | int _getline(data_of_program *input);
+      |              ^~~~~~~~~~~~~~~
+main.h:143:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  143 | int find_program(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:144:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  144 | char **tokenize_path(data_of_program *input);
+      |                      ^~~~~~~~~~~~~~~
+main.h:148:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  148 | int _print_error(int errorcode, data_of_program *input);
+      |                                 ^~~~~~~~~~~~~~~
+free.c:9:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+    9 | void free_data(data_of_program *prog_data)
+      |                ^~~~~~~~~~~~~~~
+free.c:29:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   29 | void free_data_all(data_of_program *prog_data)
+      |                    ^~~~~~~~~~~~~~~
+In file included from list_b.c:1:
+main.h:23:1: error: expected identifier or ‘(’ before string constant
+   23 | "cd:\tcd [dir]\n\n"
+      | ^~~~~~~~~~~~~~~~~~~
+main.h:88:3: warning: data definition has no type or storage class
+   88 | } data_of_program;
+      |   ^~~~~~~~~~~~~~~
+main.h:88:3: warning: type defaults to ‘int’ in declaration of ‘data_of_program’ [-Wimplicit-int]
+main.h:98:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   98 | int (*function)(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:99:1: warning: no semicolon at end of struct or union
+   99 | } builtins;
+      | ^
+main.h:101:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  101 | void inicialize_data(data_of_program *inp, int arc, char *argv[], char **env);
+      |                      ^~~~~~~~~~~~~~~
+main.h:102:27: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  102 | void sisifo(char *prompt, data_of_program *data);
+      |                           ^~~~~~~~~~~~~~~
+main.h:18:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘attribute’
+   18 | #define UNUSED attribute((unused))
+      |                ^~~~~~~~~
+main.h:103:28: note: in expansion of macro ‘UNUSED’
+  103 | void handle_ctrl_c(int opr UNUSED);
+      |                            ^~~~~~
+main.h:105:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  105 | void expand_variables(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:106:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  106 | void expand_alias(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:109:15: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  109 | void tokenize(data_of_program *data);
+      |               ^~~~~~~~~~~~~~~
+main.h:112:13: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  112 | int execute(data_of_program *data);
+      |             ^~~~~~~~~~~~~~~
+main.h:114:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  114 | int builtins_list(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:117:26: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  117 | void free_recurrent_data(data_of_program *data);
+      |                          ^~~~~~~~~~~~~~~
+main.h:118:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  118 | void free_all_data(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:120:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  120 | int builtin_env(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:121:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  121 | int builtin_set_env(data_of_program *data);
+      |                     ^~~~~~~~~~~~~~~
+main.h:122:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  122 | int builtin_unset_env(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:124:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  124 | char *env_get_key(char *name, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:125:41: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  125 | int env_set_key(char *key, char *value, data_of_program *data);
+      |                                         ^~~~~~~~~~~~~~~
+main.h:126:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  126 | int env_remove_key(char *key, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:127:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  127 | void print_environ(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:129:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  129 | int builtin_exit(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:130:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  130 | int builtin_cd(data_of_program *input);
+      |                ^~~~~~~~~~~~~~~
+main.h:131:24: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  131 | int set_work_directory(data_of_program *input, char *new_dir);
+      |                        ^~~~~~~~~~~~~~~
+main.h:132:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  132 | int builtin_help(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:133:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  133 | int builtin_alias(data_of_program *input);
+      |                   ^~~~~~~~~~~~~~~
+main.h:135:14: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  135 | int _getline(data_of_program *input);
+      |              ^~~~~~~~~~~~~~~
+main.h:143:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  143 | int find_program(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:144:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  144 | char **tokenize_path(data_of_program *input);
+      |                      ^~~~~~~~~~~~~~~
+main.h:148:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  148 | int _print_error(int errorcode, data_of_program *input);
+      |                                 ^~~~~~~~~~~~~~~
+list_b.c:10:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   10 | int builtins_ls(data_of_program *data)
+      |                 ^~~~~~~~~~~~~~~
+In file included from main.c:1:
+main.h:23:1: error: expected identifier or ‘(’ before string constant
+   23 | "cd:\tcd [dir]\n\n"
+      | ^~~~~~~~~~~~~~~~~~~
+main.h:88:3: warning: data definition has no type or storage class
+   88 | } data_of_program;
+      |   ^~~~~~~~~~~~~~~
+main.h:88:3: warning: type defaults to ‘int’ in declaration of ‘data_of_program’ [-Wimplicit-int]
+main.h:98:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   98 | int (*function)(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:99:1: warning: no semicolon at end of struct or union
+   99 | } builtins;
+      | ^
+main.h:101:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  101 | void inicialize_data(data_of_program *inp, int arc, char *argv[], char **env);
+      |                      ^~~~~~~~~~~~~~~
+main.h:102:27: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  102 | void sisifo(char *prompt, data_of_program *data);
+      |                           ^~~~~~~~~~~~~~~
+main.h:18:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘attribute’
+   18 | #define UNUSED attribute((unused))
+      |                ^~~~~~~~~
+main.h:103:28: note: in expansion of macro ‘UNUSED’
+  103 | void handle_ctrl_c(int opr UNUSED);
+      |                            ^~~~~~
+main.h:105:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  105 | void expand_variables(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:106:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  106 | void expand_alias(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:109:15: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  109 | void tokenize(data_of_program *data);
+      |               ^~~~~~~~~~~~~~~
+main.h:112:13: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  112 | int execute(data_of_program *data);
+      |             ^~~~~~~~~~~~~~~
+main.h:114:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  114 | int builtins_list(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:117:26: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  117 | void free_recurrent_data(data_of_program *data);
+      |                          ^~~~~~~~~~~~~~~
+main.h:118:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  118 | void free_all_data(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:120:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  120 | int builtin_env(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:121:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  121 | int builtin_set_env(data_of_program *data);
+      |                     ^~~~~~~~~~~~~~~
+main.h:122:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  122 | int builtin_unset_env(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:124:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  124 | char *env_get_key(char *name, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:125:41: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  125 | int env_set_key(char *key, char *value, data_of_program *data);
+      |                                         ^~~~~~~~~~~~~~~
+main.h:126:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  126 | int env_remove_key(char *key, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:127:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  127 | void print_environ(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:129:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  129 | int builtin_exit(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:130:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  130 | int builtin_cd(data_of_program *input);
+      |                ^~~~~~~~~~~~~~~
+main.h:131:24: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  131 | int set_work_directory(data_of_program *input, char *new_dir);
+      |                        ^~~~~~~~~~~~~~~
+main.h:132:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  132 | int builtin_help(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:133:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  133 | int builtin_alias(data_of_program *input);
+      |                   ^~~~~~~~~~~~~~~
+main.h:135:14: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  135 | int _getline(data_of_program *input);
+      |              ^~~~~~~~~~~~~~~
+main.h:143:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  143 | int find_program(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:144:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  144 | char **tokenize_path(data_of_program *input);
+      |                      ^~~~~~~~~~~~~~~
+main.h:148:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  148 | int _print_error(int errorcode, data_of_program *input);
+      |                                 ^~~~~~~~~~~~~~~
+main.c: In function ‘main’:
+main.c:12:24: error: expected ‘;’ before ‘data_struct’
+   12 |         data_of_program data_struct = {NULL}, *data = &data_struct;
+      |                        ^~~~~~~~~~~~
+      |                        ;
+main.c:15:9: warning: implicit declaration of function ‘inicialize_data’ [-Wimplicit-function-declaration]
+   15 |         inicialize_data(data, argc, argv, env);
+      |         ^~~~~~~~~~~~~~~
+main.c:15:25: error: ‘data’ undeclared (first use in this function)
+   15 |         inicialize_data(data, argc, argv, env);
+      |                         ^~~~
+main.c:15:25: note: each undeclared identifier is reported only once for each function it appears in
+main.c:17:24: error: ‘handle_ctrl_c’ undeclared (first use in this function)
+   17 |         signal(SIGINT, handle_ctrl_c);
+      |                        ^~~~~~~~~~~~~
+main.c:25:9: warning: implicit declaration of function ‘sisifo’ [-Wimplicit-function-declaration]
+   25 |         sisifo(prompt, data);
+      |         ^~~~~~
+main.c: At top level:
+main.h:18:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘attribute’
+   18 | #define UNUSED attribute((unused))
+      |                ^~~~~~~~~
+main.c:33:28: note: in expansion of macro ‘UNUSED’
+   33 | void handle_ctrl_c(int opr UNUSED)
+      |                            ^~~~~~
+main.c:47:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   47 | void inicialize_data(data_of_program *inp, int argc, char *argv[], char **env)
+      |                      ^~~~~~~~~~~~~~~
+main.c:93:27: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   93 | void sisifo(char *prompt, data_of_program *data)
+      |                           ^~~~~~~~~~~~~~~
+In file included from more_b.c:1:
+main.h:23:1: error: expected identifier or ‘(’ before string constant
+   23 | "cd:\tcd [dir]\n\n"
+      | ^~~~~~~~~~~~~~~~~~~
+main.h:88:3: warning: data definition has no type or storage class
+   88 | } data_of_program;
+      |   ^~~~~~~~~~~~~~~
+main.h:88:3: warning: type defaults to ‘int’ in declaration of ‘data_of_program’ [-Wimplicit-int]
+main.h:98:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   98 | int (*function)(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:99:1: warning: no semicolon at end of struct or union
+   99 | } builtins;
+      | ^
+main.h:101:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  101 | void inicialize_data(data_of_program *inp, int arc, char *argv[], char **env);
+      |                      ^~~~~~~~~~~~~~~
+main.h:102:27: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  102 | void sisifo(char *prompt, data_of_program *data);
+      |                           ^~~~~~~~~~~~~~~
+main.h:18:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘attribute’
+   18 | #define UNUSED attribute((unused))
+      |                ^~~~~~~~~
+main.h:103:28: note: in expansion of macro ‘UNUSED’
+  103 | void handle_ctrl_c(int opr UNUSED);
+      |                            ^~~~~~
+main.h:105:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  105 | void expand_variables(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:106:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  106 | void expand_alias(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:109:15: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  109 | void tokenize(data_of_program *data);
+      |               ^~~~~~~~~~~~~~~
+main.h:112:13: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  112 | int execute(data_of_program *data);
+      |             ^~~~~~~~~~~~~~~
+main.h:114:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  114 | int builtins_list(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:117:26: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  117 | void free_recurrent_data(data_of_program *data);
+      |                          ^~~~~~~~~~~~~~~
+main.h:118:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  118 | void free_all_data(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:120:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  120 | int builtin_env(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:121:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  121 | int builtin_set_env(data_of_program *data);
+      |                     ^~~~~~~~~~~~~~~
+main.h:122:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  122 | int builtin_unset_env(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:124:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  124 | char *env_get_key(char *name, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:125:41: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  125 | int env_set_key(char *key, char *value, data_of_program *data);
+      |                                         ^~~~~~~~~~~~~~~
+main.h:126:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  126 | int env_remove_key(char *key, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:127:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  127 | void print_environ(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:129:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  129 | int builtin_exit(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:130:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  130 | int builtin_cd(data_of_program *input);
+      |                ^~~~~~~~~~~~~~~
+main.h:131:24: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  131 | int set_work_directory(data_of_program *input, char *new_dir);
+      |                        ^~~~~~~~~~~~~~~
+main.h:132:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  132 | int builtin_help(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:133:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  133 | int builtin_alias(data_of_program *input);
+      |                   ^~~~~~~~~~~~~~~
+main.h:135:14: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  135 | int _getline(data_of_program *input);
+      |              ^~~~~~~~~~~~~~~
+main.h:143:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  143 | int find_program(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:144:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  144 | char **tokenize_path(data_of_program *input);
+      |                      ^~~~~~~~~~~~~~~
+main.h:148:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  148 | int _print_error(int errorcode, data_of_program *input);
+      |                                 ^~~~~~~~~~~~~~~
+more_b.c:8:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+    8 | int builtin_exit(data_of_program *input)
+      |                  ^~~~~~~~~~~~~~~
+more_b.c:32:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   32 | int builtin_cd(data_of_program *input)
+      |                ^~~~~~~~~~~~~~~
+more_b.c:71:24: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   71 | int set_work_directory(data_of_program *input, char *new_dir)
+      |                        ^~~~~~~~~~~~~~~
+more_b.c:97:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   97 | int builtin_help(data_of_program *input)
+      |                  ^~~~~~~~~~~~~~~
+more_b.c:140:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  140 | int builtin_alias(data_of_program *input)
+      |                   ^~~~~~~~~~~~~~~
+In file included from mygetline.c:1:
+main.h:23:1: error: expected identifier or ‘(’ before string constant
+   23 | "cd:\tcd [dir]\n\n"
+      | ^~~~~~~~~~~~~~~~~~~
+main.h:88:3: warning: data definition has no type or storage class
+   88 | } data_of_program;
+      |   ^~~~~~~~~~~~~~~
+main.h:88:3: warning: type defaults to ‘int’ in declaration of ‘data_of_program’ [-Wimplicit-int]
+main.h:98:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   98 | int (*function)(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:99:1: warning: no semicolon at end of struct or union
+   99 | } builtins;
+      | ^
+main.h:101:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  101 | void inicialize_data(data_of_program *inp, int arc, char *argv[], char **env);
+      |                      ^~~~~~~~~~~~~~~
+main.h:102:27: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  102 | void sisifo(char *prompt, data_of_program *data);
+      |                           ^~~~~~~~~~~~~~~
+main.h:18:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘attribute’
+   18 | #define UNUSED attribute((unused))
+      |                ^~~~~~~~~
+main.h:103:28: note: in expansion of macro ‘UNUSED’
+  103 | void handle_ctrl_c(int opr UNUSED);
+      |                            ^~~~~~
+main.h:105:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  105 | void expand_variables(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:106:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  106 | void expand_alias(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:109:15: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  109 | void tokenize(data_of_program *data);
+      |               ^~~~~~~~~~~~~~~
+main.h:112:13: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  112 | int execute(data_of_program *data);
+      |             ^~~~~~~~~~~~~~~
+main.h:114:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  114 | int builtins_list(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:117:26: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  117 | void free_recurrent_data(data_of_program *data);
+      |                          ^~~~~~~~~~~~~~~
+main.h:118:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  118 | void free_all_data(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:120:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  120 | int builtin_env(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:121:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  121 | int builtin_set_env(data_of_program *data);
+      |                     ^~~~~~~~~~~~~~~
+main.h:122:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  122 | int builtin_unset_env(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:124:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  124 | char *env_get_key(char *name, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:125:41: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  125 | int env_set_key(char *key, char *value, data_of_program *data);
+      |                                         ^~~~~~~~~~~~~~~
+main.h:126:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  126 | int env_remove_key(char *key, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:127:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  127 | void print_environ(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:129:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  129 | int builtin_exit(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:130:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  130 | int builtin_cd(data_of_program *input);
+      |                ^~~~~~~~~~~~~~~
+main.h:131:24: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  131 | int set_work_directory(data_of_program *input, char *new_dir);
+      |                        ^~~~~~~~~~~~~~~
+main.h:132:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  132 | int builtin_help(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:133:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  133 | int builtin_alias(data_of_program *input);
+      |                   ^~~~~~~~~~~~~~~
+main.h:135:14: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  135 | int _getline(data_of_program *input);
+      |              ^~~~~~~~~~~~~~~
+main.h:143:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  143 | int find_program(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:144:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  144 | char **tokenize_path(data_of_program *input);
+      |                      ^~~~~~~~~~~~~~~
+main.h:148:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  148 | int _print_error(int errorcode, data_of_program *input);
+      |                                 ^~~~~~~~~~~~~~~
+mygetline.c:8:14: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+    8 | int _getline(data_of_program *input)
+      |              ^~~~~~~~~~~~~~~
+In file included from numbers.c:1:
+main.h:23:1: error: expected identifier or ‘(’ before string constant
+   23 | "cd:\tcd [dir]\n\n"
+      | ^~~~~~~~~~~~~~~~~~~
+main.h:88:3: warning: data definition has no type or storage class
+   88 | } data_of_program;
+      |   ^~~~~~~~~~~~~~~
+main.h:88:3: warning: type defaults to ‘int’ in declaration of ‘data_of_program’ [-Wimplicit-int]
+main.h:98:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   98 | int (*function)(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:99:1: warning: no semicolon at end of struct or union
+   99 | } builtins;
+      | ^
+main.h:101:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  101 | void inicialize_data(data_of_program *inp, int arc, char *argv[], char **env);
+      |                      ^~~~~~~~~~~~~~~
+main.h:102:27: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  102 | void sisifo(char *prompt, data_of_program *data);
+      |                           ^~~~~~~~~~~~~~~
+main.h:18:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘attribute’
+   18 | #define UNUSED attribute((unused))
+      |                ^~~~~~~~~
+main.h:103:28: note: in expansion of macro ‘UNUSED’
+  103 | void handle_ctrl_c(int opr UNUSED);
+      |                            ^~~~~~
+main.h:105:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  105 | void expand_variables(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:106:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  106 | void expand_alias(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:109:15: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  109 | void tokenize(data_of_program *data);
+      |               ^~~~~~~~~~~~~~~
+main.h:112:13: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  112 | int execute(data_of_program *data);
+      |             ^~~~~~~~~~~~~~~
+main.h:114:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  114 | int builtins_list(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:117:26: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  117 | void free_recurrent_data(data_of_program *data);
+      |                          ^~~~~~~~~~~~~~~
+main.h:118:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  118 | void free_all_data(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:120:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  120 | int builtin_env(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:121:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  121 | int builtin_set_env(data_of_program *data);
+      |                     ^~~~~~~~~~~~~~~
+main.h:122:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  122 | int builtin_unset_env(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:124:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  124 | char *env_get_key(char *name, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:125:41: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  125 | int env_set_key(char *key, char *value, data_of_program *data);
+      |                                         ^~~~~~~~~~~~~~~
+main.h:126:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  126 | int env_remove_key(char *key, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:127:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  127 | void print_environ(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:129:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  129 | int builtin_exit(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:130:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  130 | int builtin_cd(data_of_program *input);
+      |                ^~~~~~~~~~~~~~~
+main.h:131:24: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  131 | int set_work_directory(data_of_program *input, char *new_dir);
+      |                        ^~~~~~~~~~~~~~~
+main.h:132:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  132 | int builtin_help(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:133:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  133 | int builtin_alias(data_of_program *input);
+      |                   ^~~~~~~~~~~~~~~
+main.h:135:14: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  135 | int _getline(data_of_program *input);
+      |              ^~~~~~~~~~~~~~~
+main.h:143:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  143 | int find_program(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:144:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  144 | char **tokenize_path(data_of_program *input);
+      |                      ^~~~~~~~~~~~~~~
+main.h:148:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  148 | int _print_error(int errorcode, data_of_program *input);
+      |                                 ^~~~~~~~~~~~~~~
+In file included from pathfinder.c:1:
+main.h:23:1: error: expected identifier or ‘(’ before string constant
+   23 | "cd:\tcd [dir]\n\n"
+      | ^~~~~~~~~~~~~~~~~~~
+main.h:88:3: warning: data definition has no type or storage class
+   88 | } data_of_program;
+      |   ^~~~~~~~~~~~~~~
+main.h:88:3: warning: type defaults to ‘int’ in declaration of ‘data_of_program’ [-Wimplicit-int]
+main.h:98:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   98 | int (*function)(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:99:1: warning: no semicolon at end of struct or union
+   99 | } builtins;
+      | ^
+main.h:101:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  101 | void inicialize_data(data_of_program *inp, int arc, char *argv[], char **env);
+      |                      ^~~~~~~~~~~~~~~
+main.h:102:27: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  102 | void sisifo(char *prompt, data_of_program *data);
+      |                           ^~~~~~~~~~~~~~~
+main.h:18:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘attribute’
+   18 | #define UNUSED attribute((unused))
+      |                ^~~~~~~~~
+main.h:103:28: note: in expansion of macro ‘UNUSED’
+  103 | void handle_ctrl_c(int opr UNUSED);
+      |                            ^~~~~~
+main.h:105:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  105 | void expand_variables(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:106:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  106 | void expand_alias(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:109:15: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  109 | void tokenize(data_of_program *data);
+      |               ^~~~~~~~~~~~~~~
+main.h:112:13: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  112 | int execute(data_of_program *data);
+      |             ^~~~~~~~~~~~~~~
+main.h:114:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  114 | int builtins_list(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:117:26: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  117 | void free_recurrent_data(data_of_program *data);
+      |                          ^~~~~~~~~~~~~~~
+main.h:118:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  118 | void free_all_data(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:120:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  120 | int builtin_env(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:121:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  121 | int builtin_set_env(data_of_program *data);
+      |                     ^~~~~~~~~~~~~~~
+main.h:122:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  122 | int builtin_unset_env(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:124:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  124 | char *env_get_key(char *name, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:125:41: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  125 | int env_set_key(char *key, char *value, data_of_program *data);
+      |                                         ^~~~~~~~~~~~~~~
+main.h:126:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  126 | int env_remove_key(char *key, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:127:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  127 | void print_environ(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:129:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  129 | int builtin_exit(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:130:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  130 | int builtin_cd(data_of_program *input);
+      |                ^~~~~~~~~~~~~~~
+main.h:131:24: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  131 | int set_work_directory(data_of_program *input, char *new_dir);
+      |                        ^~~~~~~~~~~~~~~
+main.h:132:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  132 | int builtin_help(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:133:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  133 | int builtin_alias(data_of_program *input);
+      |                   ^~~~~~~~~~~~~~~
+main.h:135:14: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  135 | int _getline(data_of_program *input);
+      |              ^~~~~~~~~~~~~~~
+main.h:143:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  143 | int find_program(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:144:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  144 | char **tokenize_path(data_of_program *input);
+      |                      ^~~~~~~~~~~~~~~
+main.h:148:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  148 | int _print_error(int errorcode, data_of_program *input);
+      |                                 ^~~~~~~~~~~~~~~
+pathfinder.c:8:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+    8 | int find_program(data_of_program *input)
+      |                  ^~~~~~~~~~~~~~~
+pathfinder.c:55:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   55 | char **tokenize_path(data_of_program *input)
+      |                      ^~~~~~~~~~~~~~~
+In file included from _print.c:1:
+main.h:23:1: error: expected identifier or ‘(’ before string constant
+   23 | "cd:\tcd [dir]\n\n"
+      | ^~~~~~~~~~~~~~~~~~~
+main.h:88:3: warning: data definition has no type or storage class
+   88 | } data_of_program;
+      |   ^~~~~~~~~~~~~~~
+main.h:88:3: warning: type defaults to ‘int’ in declaration of ‘data_of_program’ [-Wimplicit-int]
+main.h:98:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   98 | int (*function)(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:99:1: warning: no semicolon at end of struct or union
+   99 | } builtins;
+      | ^
+main.h:101:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  101 | void inicialize_data(data_of_program *inp, int arc, char *argv[], char **env);
+      |                      ^~~~~~~~~~~~~~~
+main.h:102:27: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  102 | void sisifo(char *prompt, data_of_program *data);
+      |                           ^~~~~~~~~~~~~~~
+main.h:18:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘attribute’
+   18 | #define UNUSED attribute((unused))
+      |                ^~~~~~~~~
+main.h:103:28: note: in expansion of macro ‘UNUSED’
+  103 | void handle_ctrl_c(int opr UNUSED);
+      |                            ^~~~~~
+main.h:105:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  105 | void expand_variables(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:106:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  106 | void expand_alias(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:109:15: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  109 | void tokenize(data_of_program *data);
+      |               ^~~~~~~~~~~~~~~
+main.h:112:13: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  112 | int execute(data_of_program *data);
+      |             ^~~~~~~~~~~~~~~
+main.h:114:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  114 | int builtins_list(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:117:26: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  117 | void free_recurrent_data(data_of_program *data);
+      |                          ^~~~~~~~~~~~~~~
+main.h:118:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  118 | void free_all_data(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:120:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  120 | int builtin_env(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:121:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  121 | int builtin_set_env(data_of_program *data);
+      |                     ^~~~~~~~~~~~~~~
+main.h:122:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  122 | int builtin_unset_env(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:124:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  124 | char *env_get_key(char *name, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:125:41: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  125 | int env_set_key(char *key, char *value, data_of_program *data);
+      |                                         ^~~~~~~~~~~~~~~
+main.h:126:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  126 | int env_remove_key(char *key, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:127:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  127 | void print_environ(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:129:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  129 | int builtin_exit(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:130:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  130 | int builtin_cd(data_of_program *input);
+      |                ^~~~~~~~~~~~~~~
+main.h:131:24: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  131 | int set_work_directory(data_of_program *input, char *new_dir);
+      |                        ^~~~~~~~~~~~~~~
+main.h:132:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  132 | int builtin_help(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:133:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  133 | int builtin_alias(data_of_program *input);
+      |                   ^~~~~~~~~~~~~~~
+main.h:135:14: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  135 | int _getline(data_of_program *input);
+      |              ^~~~~~~~~~~~~~~
+main.h:143:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  143 | int find_program(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:144:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  144 | char **tokenize_path(data_of_program *input);
+      |                      ^~~~~~~~~~~~~~~
+main.h:148:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  148 | int _print_error(int errorcode, data_of_program *input);
+      |                                 ^~~~~~~~~~~~~~~
+_print.c:28:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   28 | int _print_error(int errorcode, data_of_program *input)
+      |                                 ^~~~~~~~~~~~~~~
+_strings.c:1:10: fatal error: shell.h: No such file or directory
+    1 | #include "shell.h"
+      |          ^~~~~~~~~
+compilation terminated.
+_strtoken.c:1:10: fatal error: shell.h: No such file or directory
+    1 | #include "shell.h"
+      |          ^~~~~~~~~
+compilation terminated.
+In file included from tokens.c:1:
+main.h:23:1: error: expected identifier or ‘(’ before string constant
+   23 | "cd:\tcd [dir]\n\n"
+      | ^~~~~~~~~~~~~~~~~~~
+main.h:88:3: warning: data definition has no type or storage class
+   88 | } data_of_program;
+      |   ^~~~~~~~~~~~~~~
+main.h:88:3: warning: type defaults to ‘int’ in declaration of ‘data_of_program’ [-Wimplicit-int]
+main.h:98:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+   98 | int (*function)(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:99:1: warning: no semicolon at end of struct or union
+   99 | } builtins;
+      | ^
+main.h:101:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  101 | void inicialize_data(data_of_program *inp, int arc, char *argv[], char **env);
+      |                      ^~~~~~~~~~~~~~~
+main.h:102:27: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  102 | void sisifo(char *prompt, data_of_program *data);
+      |                           ^~~~~~~~~~~~~~~
+main.h:18:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘attribute’
+   18 | #define UNUSED attribute((unused))
+      |                ^~~~~~~~~
+main.h:103:28: note: in expansion of macro ‘UNUSED’
+  103 | void handle_ctrl_c(int opr UNUSED);
+      |                            ^~~~~~
+main.h:105:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  105 | void expand_variables(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:106:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  106 | void expand_alias(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:109:15: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  109 | void tokenize(data_of_program *data);
+      |               ^~~~~~~~~~~~~~~
+main.h:112:13: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  112 | int execute(data_of_program *data);
+      |             ^~~~~~~~~~~~~~~
+main.h:114:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  114 | int builtins_list(data_of_program *data);
+      |                   ^~~~~~~~~~~~~~~
+main.h:117:26: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  117 | void free_recurrent_data(data_of_program *data);
+      |                          ^~~~~~~~~~~~~~~
+main.h:118:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  118 | void free_all_data(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:120:17: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  120 | int builtin_env(data_of_program *data);
+      |                 ^~~~~~~~~~~~~~~
+main.h:121:21: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  121 | int builtin_set_env(data_of_program *data);
+      |                     ^~~~~~~~~~~~~~~
+main.h:122:23: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  122 | int builtin_unset_env(data_of_program *data);
+      |                       ^~~~~~~~~~~~~~~
+main.h:124:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  124 | char *env_get_key(char *name, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:125:41: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  125 | int env_set_key(char *key, char *value, data_of_program *data);
+      |                                         ^~~~~~~~~~~~~~~
+main.h:126:31: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  126 | int env_remove_key(char *key, data_of_program *data);
+      |                               ^~~~~~~~~~~~~~~
+main.h:127:20: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  127 | void print_environ(data_of_program *data);
+      |                    ^~~~~~~~~~~~~~~
+main.h:129:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  129 | int builtin_exit(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:130:16: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  130 | int builtin_cd(data_of_program *input);
+      |                ^~~~~~~~~~~~~~~
+main.h:131:24: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  131 | int set_work_directory(data_of_program *input, char *new_dir);
+      |                        ^~~~~~~~~~~~~~~
+main.h:132:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  132 | int builtin_help(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:133:19: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  133 | int builtin_alias(data_of_program *input);
+      |                   ^~~~~~~~~~~~~~~
+main.h:135:14: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  135 | int _getline(data_of_program *input);
+      |              ^~~~~~~~~~~~~~~
+main.h:143:18: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  143 | int find_program(data_of_program *input);
+      |                  ^~~~~~~~~~~~~~~
+main.h:144:22: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  144 | char **tokenize_path(data_of_program *input);
+      |                      ^~~~~~~~~~~~~~~
+main.h:148:33: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+  148 | int _print_error(int errorcode, data_of_program *input);
+      |                                 ^~~~~~~~~~~~~~~
+tokens.c:8:15: error: expected declaration specifiers or ‘...’ before ‘data_of_program’
+    8 | void tokenize(data_of_program *data)
+      |               ^~~~~~~~~~~~~~~
+
